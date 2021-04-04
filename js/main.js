@@ -20,5 +20,6 @@ $(function(){
         setTimeout(function () {
             Scroller(text.substr(1) + text.substr(0, 1));
         }, 500);
-    }(document.title+" - ");
+    };
+    Scroller(document.title+" - ");
 })
