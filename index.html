@@ -10,42 +10,55 @@
 		<meta property="og:image" content="imgs/pp.jpg"/>
 
 		<style>
-		/* geral */
-		body
-		{
-			background-image: url("imgs/background.png");
-			background-size: cover;
-			color: white;
-			background-color: black;
-		}
+			/* geral */
+			body
+			{
+				background-image: url("imgs/background.png");
+				background-size: cover;
+				color: white;
+				background-color: black;
+			}
 
-		/* menu */
-		#menu ul
-		{
-			list-style:none;
-		}
+			/* menu */
+			#menu ul
+			{
+				list-style:none;
+			}
 
-		#menu ul li 
-		{
-			display: inline;
-		}
+			#menu ul li 
+			{
+				display: inline;
+			}
 
-		#menu ul li a
-		{
-			padding-left: 10px;
-			padding-right: 10px;
+			#menu ul li a
+			{
+				padding-left: 10px;
+				padding-right: 10px;
 
-			display: inline-block;
-			color: white;
-			text-decoration: none;
-		}
+				display: inline-block;
+				color: white;
+				text-decoration: none;
+			}
 
-		#menu ul li a:hover
-		{
-			letter-spacing: 2px;
-		}
+			#menu ul li a:hover
+			{
+				letter-spacing: 2px;
+			}
 		</style>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script>
+			$(function(){
+				var prev;
+				$("menu li ul a").hover(
+					function(){
+						prev = $(this).text();
+						$(this).text(`[ ${prev} ]`);
+					},
+					function(){
+						$(this).text(`${prev}`);
+					})
+			})
+		</script>
 	</head>
 	<body>
 		<nav id="menu">
