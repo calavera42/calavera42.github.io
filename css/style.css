@@ -30,7 +30,8 @@ body/*p, a, span, img*/
     transform: translate(-50%, -50%);
 }
 
-.container{
+.main-body
+{
     width: 650px;
     border-style: double;
     position: relative;
@@ -40,6 +41,11 @@ body/*p, a, span, img*/
     bottom: 50px;
     left: 50%;
     margin-left: -395px;
+}
+
+.footer
+{
+    text-align: center;
 }
 
 /* menu */
