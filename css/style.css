@@ -34,7 +34,7 @@ body/*p, a, span, img*/
 .main-body
 {
     width: 650px;
-    border-style: double;
+    border-style: 1px solid;
     padding: 40px 70px;
     margin-top: 0;
     margin-bottom: 70px;
