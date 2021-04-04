@@ -12,19 +12,7 @@
 		<link rel="stylesheet" href="css/style.css">
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-		<script>
-			$(function(){
-				var prev;
-				$("a").hover(
-					function(){
-						prev = $(this).text();
-						$(this).text(`[ ${prev} ]`);
-					},
-					function(){
-						$(this).text(`${prev}`);
-				})
-			})
-		</script>
+		<script src="js/main.js"></script>
 	</head>
 	<body>
 		<nav id="menu">
