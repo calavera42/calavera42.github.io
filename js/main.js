@@ -21,5 +21,5 @@ $(function(){
             Scroller(text.substr(1) + text.substr(0, 1));
         }, 500);
     };
-    Scroller(document.title+" - ");
+    Scroller(document.title+"] - [");
 })
