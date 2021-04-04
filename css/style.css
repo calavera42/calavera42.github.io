@@ -54,11 +54,6 @@ body/*p, a, span, img*/
 }
 
 /* menu */
-#menu
-{
-    position: sticky;
-}
-
 #menu ul
 {
     list-style:none;
