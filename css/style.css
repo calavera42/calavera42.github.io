@@ -33,7 +33,7 @@ body/*p, a, span, img*/
 .main-body
 {
     width: 650px;
-    border-style: double;
+    border-style: solid;
     padding: 40px 70px;
     position: absolute;
     top: 50px;
