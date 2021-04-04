@@ -7,10 +7,7 @@ body
     color: white;
     background-color: black;
     text-decoration: none;
-}
-
-body/*p, a, span, img*/
-{
+    
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
