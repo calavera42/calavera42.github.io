@@ -2,21 +2,54 @@
 <html>
 	<head>
 		<title>c a l a v e r a</title>
-		<link rel="shortcut icon" href="imgs/glbe.ico" />
+		<link rel="shortcut icon" href="imgs/glbe.ico"/>
 		
 		<style>
+			/*geral*/
 			body
 			{
 				background-image: url("imgs/background.png");
 				background-size: cover;
-        color: white;
-        background-color: black;
+        		color: white;
+        		background-color: black;
+			}
+
+			/* menu */
+			#menu ul
+			{
+    			list-style:none;
+			}
+
+			#menu ul li 
+			{
+				display: inline;
+			}
+
+			#menu ul li a
+			{
+			    display: inline-block;
+    			color: white;
+    			text-decoration: none;
+			}
+
+			#menu ul li a:hover, #selected
+			{
+				letter-spacing: 2px;
+				text-decoration: underline;
 			}
 		</style>
-		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	</head>
 	<body>
+		<nav id="menu">
+			<ul>
+				<li><a id="selected" href="#">home</a></li>
+				<li><a href="#">projetos</a></li>
+				<li><a href="#">sobre</a></li>
+				<li><a href="#">contato</a></li>
+			</ul>
+		</nav>
+
 		<center><img src="imgs/install.png"><br></center>
 		<center><span>Under construction</span></center>
 	</body>
