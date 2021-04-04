@@ -44,11 +44,11 @@ body/*p, a, span, img*/
 
 .footer
 {
-    left: 3px;
-    right: 3px;
-    position: absolute;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     text-align: center;
-    bottom: 20px;
 }
 
 /* menu */
