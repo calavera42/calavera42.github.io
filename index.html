@@ -61,7 +61,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<script>
 			$(function(){
-				Clock();
+				setTimeout(Clock(), 500);
 			})
 			$(function(){
 				var prev;
@@ -96,8 +96,6 @@
   				s = checkTime(s);
   				document.getElementById('clock').innerHTML =
   				h + ":" + m + ":" + s;
-				
-				var t = setTimeout(Clock(), 500);
 			}
 			function checkTime(i) {
   				if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
