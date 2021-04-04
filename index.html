@@ -61,6 +61,9 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<script>
 			$(function(){
+				Clock();
+			})
+			$(function(){
 				var prev;
 				$("a").hover(
 					function(){
@@ -82,6 +85,19 @@
 						$(this).text(`${prev}`);
 				})
 			})
+			function Clock()
+			{
+				var today = new Date();
+  				var h = today.getHours();
+  				var m = today.getMinutes();
+  				var s = today.getSeconds();
+  				m = checkTime(m);
+  				s = checkTime(s);
+  				document.getElementById('clock').innerHTML =
+  				h + ":" + m + ":" + s;
+				
+				var t = setTimeout(Clock(), 500);
+			}
 		</script>
 	</head>
 	<body>
@@ -92,7 +108,7 @@
 				<li><a href="https://calavera42.github.io/projetos">projetos</a></li>
 				<li><a href="https://calavera42.github.io/sobre">sobre</a></li>
 				<li><a href="https://calavera42.github.io/contato">contato</a></li><br>
-				<li><span>time</span></li>
+				<li><span id="clock">time</span></li>
 			</ul>
 		</nav>
 
