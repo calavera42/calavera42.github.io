@@ -45,6 +45,7 @@ body/*p, a, span, img*/
 
 .footer
 {
+    position: absolute;
     text-align: center;
     bottom: 10px;
 }
