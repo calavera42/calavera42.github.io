@@ -36,8 +36,8 @@ body/*p, a, span, img*/
     position: relative;
     padding: 40px 70px;
     position: absolute;
-    top: 0px;
-    bottom: 0px;
+    top: 50px;
+    bottom: 50px;
     left: 50%;
     margin-left: -395px;
 }
