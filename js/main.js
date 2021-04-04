@@ -1,3 +1,5 @@
+//menu hover//
+//////////////
 $(function(){
     var prev;
     $("a").hover(
@@ -8,4 +10,14 @@ $(function(){
         function(){
             $(this).text(`${prev}`);
     })
+})
+
+//title scroll//
+////////////////
+$(function(){
+    var text = document.title;
+    setTimeout(function () {
+        titleScroller(text.substr(1) + text.substr(0, 1));
+        document.title = text;
+    }, 500);
 })
