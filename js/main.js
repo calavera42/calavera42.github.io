@@ -15,9 +15,10 @@ $(function(){
 //title scroll//
 ////////////////
 $(function(){
-    var text = document.title + " - ";
-    setTimeout(function () {
-        text = text.substr(1) + text.substr(0, 1);
+    function Scroller(text) {
         document.title = text;
-    }, 500);
+        setTimeout(function () {
+            Scroller(text.substr(1) + text.substr(0, 1));
+        }, 500);
+    }(document.title+" - ");
 })
