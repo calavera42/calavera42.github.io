@@ -34,7 +34,6 @@ body/*p, a, span, img*/
 {
     width: 650px;
     border-style: double;
-    position: relative;
     padding: 40px 70px;
     position: absolute;
     top: 50px;
