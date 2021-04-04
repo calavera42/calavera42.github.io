@@ -2,6 +2,7 @@
 body
 {
     background-image: url("../imgs/background.png");
+    background-size: contain;
     background-repeat: repeat;
     color: white;
     background-color: black;
