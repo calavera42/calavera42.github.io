@@ -33,13 +33,14 @@ body/*p, a, span, img*/
 .main-body
 {
     width: 650px;
+    border-style: double;
     padding: 40px 70px;
     padding-bottom: 60px;
     position: absolute;
     top: 50px;
     bottom: 65px;
     left: 50%;
-    margin-left: -325px;
+    margin-left: -395px;
 }
 
 .footer
