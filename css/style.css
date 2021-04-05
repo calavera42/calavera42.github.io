@@ -25,6 +25,7 @@ a, p, h1, h2, body, img
 
 img
 {
+    position: absolute;
     margin: 2px;
 }
 
