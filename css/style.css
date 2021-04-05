@@ -15,7 +15,6 @@ body
 
 a, p, h1, h2, body, img
 {
-    text-decoration: underline;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
