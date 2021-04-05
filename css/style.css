@@ -34,7 +34,7 @@ a, p, h1, h2, body, img
 
 .download-text
 {
-    position: absolute;
+    position: relative;
     overflow: hidden;
     z-index: 0;
 }
