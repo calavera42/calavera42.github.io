@@ -8,12 +8,8 @@ body
     background-color: black;
     text-decoration: none;
 
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-
-    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
     
     -webkit-user-select: none;
     -moz-user-select: none;
