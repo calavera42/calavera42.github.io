@@ -13,5 +13,5 @@ $(function(){
 })
 
 $(document).ready(function() {
-    $('body').css('background-size', $(window).width()/3 + 'px ' + $(window).height()/2 + 'px');
+    $('body').css('background-size', $(window).width()/5 + 'px ' + $(window).height()/5 + 'px');
 })
