@@ -15,7 +15,7 @@ body
 
 a, p, h1, h2, body, img
 {
-    margin: 0;
+    margin: 2px;
     padding: 0;
     -webkit-user-select: none;
     -moz-user-select: none;
