@@ -18,8 +18,8 @@ $(function(){
 
 $(document).ready(function()
 {
-    $(".asd").style(`top: ${rnd($(document).height(), 0)}`);
-    $(".asd").style(`left: ${rnd($(document).width(), 0)}`);
+    $(".asd").css(`top: ${rnd($(document).height(), 0)}`);
+    $(".asd").css(`left: ${rnd($(document).width(), 0)}`);
 })
 
 function rnd(max, min)
