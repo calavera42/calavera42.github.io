@@ -12,6 +12,8 @@ body
     left: 0px;
     right: 0px;
     top: 0px;
+
+    position: absolute;
     
     -webkit-user-select: none;
     -moz-user-select: none;
