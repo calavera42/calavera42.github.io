@@ -23,6 +23,11 @@ a, p, h1, h2, body, img
     color: white;
 }
 
+.download
+{
+    margin-bottom: 20px;
+}
+
 .download-img
 {
     position: absolute;
