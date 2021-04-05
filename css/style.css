@@ -2,8 +2,8 @@
 body
 {
     background-image: url("../imgs/background.png");
-    background-size: 40%, 40%;
-    background-repeat: repeat;
+    background-repeat: repeat-y;
+    background-size: cover;
     color: white;
     background-color: black;
     text-decoration: none;
