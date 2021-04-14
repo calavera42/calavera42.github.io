@@ -2,16 +2,26 @@
 //////////////
 $(function(){
     var prev;
+    var click = 0;
+
     $("a").hover(
-        function(){
+        function()
+        {
             prev = $(this).text();
             $(this).text(`[ ${prev} ]`);
         },
         function(){
             $(this).text(`${prev}`);
     })
+    $("#secret").click(
+        function()
+        {
+            click++;
+            if(click == 10)
+            {
+                click = 0;
+                alert("gay");
+            }
+        }
+    )
 })
-
-//$(document).ready(function() {
-//    $('body').css('background-size', $(window).width()/5 + 'px ' + $(window).height()/5 + 'px');
-//})
