@@ -67,8 +67,7 @@ a, p, h1, h2, body, img
     position: relative;
     top: 50px;
     bottom: 100px;
-    left: 50%;
-    margin-left: -395px;
+    margin: auto;
 }
 
 .footer
