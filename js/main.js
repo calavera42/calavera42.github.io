@@ -13,7 +13,7 @@ $(function(){
         function(){
             $(this).text(`${prev}`);
     })
-    $("#secret").click(
+    $("#title").click(
         function()
         {
             click++;
