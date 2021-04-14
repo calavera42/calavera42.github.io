@@ -13,7 +13,7 @@ $(function(){
         function(){
             $(this).text(`${prev}`);
     })
-    $("#title").click(
+    /*$("#title").click(
         function()
         {
             click++;
@@ -23,5 +23,5 @@ $(function(){
                 alert("gay");
             }
         }
-    )
+    )*/
 })
