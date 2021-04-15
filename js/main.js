@@ -20,6 +20,7 @@ $(function()
             {
                 click = 60;
                 var audio = new Audio('../audio/theme.mp3');
+                audio.volume = 0.2;
                 audio.play();
             }
         }
