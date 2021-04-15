@@ -25,7 +25,7 @@ $(function()
                 setTimeout(function()
                 {
                     document.location.href = "../html/download.html";
-                }, 84000)
+                }, 314000)
             }
         }
     )
@@ -33,7 +33,7 @@ $(function()
     {
         e.preventDefault();
     }, false)
-
+    
     document.addEventListener("keydown", function(e)
     {
         if(e.ctrlKey || e.key == 123)
