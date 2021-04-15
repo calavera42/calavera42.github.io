@@ -1,1 +1,45 @@
-var _0x2dd1=['55LMsDdi','text','717VXQFUk','hover','click','1613hkqvLZ','229718fHcBvn','499kCdZEn','1225294pGlsJr','#title','volume','258718xNgTgP','play','344155BCukmg','94ENHBrd','../audio/theme.mp3','6661uYjcRb'];function _0x12ed(_0x567d73,_0x504148){_0x567d73=_0x567d73-0x19e;var _0x2dd19f=_0x2dd1[_0x567d73];return _0x2dd19f;}(function(_0xea812b,_0x1f50a9){var _0x1e9c90=_0x12ed;while(!![]){try{var _0x1fba89=-parseInt(_0x1e9c90(0x1a5))+parseInt(_0x1e9c90(0x1ab))*-parseInt(_0x1e9c90(0x19f))+-parseInt(_0x1e9c90(0x1a3))+-parseInt(_0x1e9c90(0x1a6))*parseInt(_0x1e9c90(0x1ae))+-parseInt(_0x1e9c90(0x1a8))*-parseInt(_0x1e9c90(0x1a9))+-parseInt(_0x1e9c90(0x19e))+parseInt(_0x1e9c90(0x1a0));if(_0x1fba89===_0x1f50a9)break;else _0xea812b['push'](_0xea812b['shift']());}catch(_0x5b4690){_0xea812b['push'](_0xea812b['shift']());}}}(_0x2dd1,0x3cf35),$(function(){var _0x418fdf=_0x12ed,_0xb7980e,_0x4334e6=0x0;$('a')[_0x418fdf(0x1ac)](function(){var _0x2a08ad=_0x418fdf;_0xb7980e=$(this)[_0x2a08ad(0x1aa)](),$(this)[_0x2a08ad(0x1aa)]('[\x20'+_0xb7980e+'\x20]');},function(){var _0x22be95=_0x418fdf;$(this)[_0x22be95(0x1aa)](''+_0xb7980e);}),$(_0x418fdf(0x1a1))[_0x418fdf(0x1ad)](function(){var _0x4e9ad5=_0x418fdf;_0x4334e6++;if(_0x4334e6==0x32){_0x4334e6=0x3c;var _0x72ef45=new Audio(_0x4e9ad5(0x1a7));_0x72ef45[_0x4e9ad5(0x1a2)]=0.2,_0x72ef45[_0x4e9ad5(0x1a4)]();}});}));
+$(function()
+{
+    var prev;
+    var click = 0;
+
+    $("a").hover(
+        function()
+        {
+            prev = $(this).text();
+            $(this).text(`[ ${prev} ]`);
+        },
+        function(){
+            $(this).text(`${prev}`);
+    })
+    $("#title").click(
+        function()
+        {
+            click++;
+            if(click == 50)
+            {
+                click = 60;
+                var audio = new Audio('../audio/theme.mp3');
+                audio.volume = 0.2;
+                audio.play();
+                setTimeout(function()
+                {
+                    document.location.href = "../html/download.html";
+                }, 84000)
+            }
+        }
+    )
+    document.addEventListener("contextmenu", function(e)
+    {
+        e.preventDefault();
+    }, false)
+
+    document.addEventListener("keydown", function(e)
+    {
+        if(e.ctrlKey || e.key == 123)
+        {
+            e.stopPropagation();
+            e.preventDefault();
+        }
+    })
+})
