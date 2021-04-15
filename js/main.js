@@ -16,25 +16,16 @@ $(function()
     $("#title").click(
         function()
         {
-            setInterval(function()
-            {
-                if(!played)
-                {
-                    click--;
-                }
-            }, 12000);
             click++;
             if(click == 50)
             {
                 setTimeout(function()
                 {
                     click = 60;
-                    played = true;
-
                     var audio = new Audio('../audio/theme.mp3');
                     audio.volume = 0.2;
                     audio.play();
-                }, 15000);
+                }, 20000);
             }
         }
     )
