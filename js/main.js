@@ -16,9 +16,9 @@ $(function()
         function()
         {
             click++;
-            if(click == 10)
+            if(click == 50)
             {
-                click = 20;
+                click = 60;
                 var audio = new Audio('../audio/theme.mp3');
                 audio.play();
             }
