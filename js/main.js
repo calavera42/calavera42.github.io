@@ -1,4 +1,5 @@
-$(function(){
+$(function()
+{
     var prev;
     var click = 0;
 
@@ -17,10 +18,23 @@ $(function(){
             click++;
             if(click == 10)
             {
-                click = 0;
+                click = 20;
                 var audio = new Audio('../audio/theme.mp3');
                 audio.play();
             }
         }
     )
+    document.addEventListener("contextmenu", function(e)
+    {
+        e.preventDefault();
+    }, false)
+
+    document.addEventListener("keydown", function(e)
+    {
+        if(e.ctrlKey || e.key == 123)
+        {
+            e.stopPropagation();
+            e.preventDefault();
+        }
+    })
 })
