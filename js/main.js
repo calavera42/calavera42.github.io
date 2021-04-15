@@ -1,1 +1,54 @@
-var _0x2744=['ctrlKey','998688UxIlLC','../audio/theme.mp3','2389FQOXYq','10666nzPLit','812521lkXHcA','hover','preventDefault','click','241SdXSkQ','keydown','text','stopPropagation','volume','7FPGgcH','84739iKsWut','1002683FYtWWm','5397umhlRy','addEventListener','key','21MjeSHk','play','#title'];function _0x5304(_0x16dc9b,_0xf0cc2c){_0x16dc9b=_0x16dc9b-0x8b;var _0x2744ab=_0x2744[_0x16dc9b];return _0x2744ab;}(function(_0x59f734,_0x7aab75){var _0x4de592=_0x5304;while(!![]){try{var _0x1f3055=parseInt(_0x4de592(0x8f))*parseInt(_0x4de592(0x95))+-parseInt(_0x4de592(0x9a))*parseInt(_0x4de592(0x9b))+parseInt(_0x4de592(0x9d))+parseInt(_0x4de592(0x91))+-parseInt(_0x4de592(0xa0))*parseInt(_0x4de592(0x90))+-parseInt(_0x4de592(0x8d))+parseInt(_0x4de592(0x9c));if(_0x1f3055===_0x7aab75)break;else _0x59f734['push'](_0x59f734['shift']());}catch(_0x101551){_0x59f734['push'](_0x59f734['shift']());}}}(_0x2744,0x8db97),$(function(){var _0x71d2d6=_0x5304,_0x3d74a0,_0x6902ab=0x0;$('a')[_0x71d2d6(0x92)](function(){var _0x16afcf=_0x71d2d6;_0x3d74a0=$(this)[_0x16afcf(0x97)](),$(this)[_0x16afcf(0x97)]('[\x20'+_0x3d74a0+'\x20]');},function(){$(this)['text'](''+_0x3d74a0);}),$(_0x71d2d6(0x8b))[_0x71d2d6(0x94)](function(){_0x6902ab++,_0x6902ab==0x32&&setTimeout(function(){var _0x3a3609=_0x5304;_0x6902ab=0x3c;var _0x3225d3=new Audio(_0x3a3609(0x8e));_0x3225d3[_0x3a3609(0x99)]=0.2,_0x3225d3[_0x3a3609(0xa1)]();},0x3a98);}),document[_0x71d2d6(0x9e)]('contextmenu',function(_0x5a3026){var _0x23ab07=_0x71d2d6;_0x5a3026[_0x23ab07(0x93)]();},![]),document['addEventListener'](_0x71d2d6(0x96),function(_0x32aa8a){var _0x3b0e35=_0x71d2d6;(_0x32aa8a[_0x3b0e35(0x8c)]||_0x32aa8a[_0x3b0e35(0x9f)]==0x7b)&&(_0x32aa8a[_0x3b0e35(0x98)](),_0x32aa8a[_0x3b0e35(0x93)]());});}));
+$(function()
+{
+    var prev;
+    var click = 0;
+    var played = false;
+
+    $("a").hover(
+        function()
+        {
+            prev = $(this).text();
+            $(this).text(`[ ${prev} ]`);
+        },
+        function(){
+            $(this).text(`${prev}`);
+    })
+    $("#title").click(
+        function()
+        {
+            setInterval(function()
+            {
+                if(!played)
+                {
+                    click--;
+                }
+            }, 12000);
+            click++;
+            if(click == 50)
+            {
+                setTimeout(function()
+                {
+                    click = 60;
+                    played = true;
+
+                    var audio = new Audio('../audio/theme.mp3');
+                    audio.volume = 0.2;
+                    audio.play();
+                }, 15000);
+            }
+        }
+    )
+    document.addEventListener("contextmenu", function(e)
+    {
+        e.preventDefault();
+    }, false)
+    
+    document.addEventListener("keydown", function(e)
+    {
+        if(e.ctrlKey || e.key == 123)
+        {
+            e.stopPropagation();
+            e.preventDefault();
+        }
+    })
+})
