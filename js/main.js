@@ -1,5 +1,3 @@
-//menu hover//
-//////////////
 $(function(){
     var prev;
     var click = 0;
@@ -13,15 +11,16 @@ $(function(){
         function(){
             $(this).text(`${prev}`);
     })
-    /*$("#title").click(
+    $("#title").click(
         function()
         {
             click++;
             if(click == 10)
             {
                 click = 0;
-                alert("gay");
+                var audio = new Audio('../audio/theme.mp3');
+                audio.play();
             }
         }
-    )*/
+    )
 })
