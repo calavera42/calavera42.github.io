@@ -1,3 +1,4 @@
+#send help
 User-agent: *
 Disallow: /audio/
 Disallow: /css/
@@ -5,5 +6,6 @@ Disallow: /downloads/
 Disallow: /html/
 Disallow: /imgs/
 Disallow: /js/
+Allow: /
 
 Sitemap: https://calavera.xyz/sitemap.xml/
