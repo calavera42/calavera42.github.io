@@ -1,6 +1,6 @@
 $(function() {
     var prev;
-    var clicks;
+    var clicks = 0;
     var secondClick = false;
 
     $("a").hover(function()
