@@ -14,15 +14,12 @@ $(function() {
 
     $("#title").click(function(){
         clicks++;
-        if(clicks == 60)
+        if(clicks == 60 && secondClick)
         {
             clicks = 120;
-
-            if(secondClick){
-                var audio = new Audio("../audio/theme.mp3");
-                audio.volume = 0.1;
-                audio.play();
-            }
+            var audio = new Audio("../audio/theme.mp3");
+            audio.volume = 0.1;
+            audio.play();
         }
     })
 
