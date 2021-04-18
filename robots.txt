@@ -1,4 +1,4 @@
-# send help
+# red herrings everywhere
 User-agent: *
 Disallow: /audio/
 Disallow: /css/
