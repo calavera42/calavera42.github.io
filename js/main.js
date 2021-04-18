@@ -1,1 +1,32 @@
-var _0xae48=["\x74\x65\x78\x74","\x5B\x20","\x20\x5D","\x68\x6F\x76\x65\x72","\x61","\x2E\x2E\x2F\x61\x75\x64\x69\x6F\x2F\x74\x68\x65\x6D\x65\x2E\x6D\x70\x33","\x76\x6F\x6C\x75\x6D\x65","\x70\x6C\x61\x79","\x63\x6C\x69\x63\x6B","\x23\x74\x69\x74\x6C\x65"];$(function(){var _0x2658x1;var _0x2658x2;var _0x2658x3=false;$(_0xae48[4])[_0xae48[3]](function(){_0x2658x1= $(this)[_0xae48[0]];$(this)[_0xae48[0]](`${_0xae48[1]}${_0x2658x1}${_0xae48[2]}`)},function(){$(this)[_0xae48[0]](_0x2658x1)});$(_0xae48[9])[_0xae48[8]](function(){_0x2658x2++;if(_0x2658x2== 60){_0x2658x2= 120;if(_0x2658x3){var _0x2658x4= new Audio(_0xae48[5]);_0x2658x4[_0xae48[6]]= 0.1;_0x2658x4[_0xae48[7]]()}}})})
+$(function() {
+    var prev;
+    var clicks;
+    var secondClick = false;
+
+    $("a").hover(function()
+    {
+        prev = $(this).text;
+        $(this).text(`[ ${prev} ]`);
+    }, function()
+    {
+        $(this).text(prev);
+    })
+
+    $("#title").click(function(){
+        clicks++;
+        if(clicks == 60)
+        {
+            clicks = 120;
+
+            if(secondClick){
+                var audio = new Audio("../audio/theme.mp3");
+                audio.volume = 0.1;
+                audio.play();
+            }
+        }
+    })
+
+    $("calavera").click(function(){
+        secondClick = true;
+    })
+})
