@@ -26,7 +26,7 @@ $(function() {
         }
     })
 
-    $("calavera").click(function(){
+    $("#calavera").click(function(){
         secondClick = true;
     })
 })
