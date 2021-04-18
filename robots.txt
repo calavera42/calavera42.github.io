@@ -1,4 +1,4 @@
-#send help
+# send help
 User-agent: *
 Disallow: /audio/
 Disallow: /css/
