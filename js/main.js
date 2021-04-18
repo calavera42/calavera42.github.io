@@ -13,6 +13,7 @@ $(function() {
     })
 
     $("#title").click(function(){
+        alert("ta-da");
         clicks++;
         if(clicks == 60 && secondClick)
         {
