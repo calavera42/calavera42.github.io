@@ -5,7 +5,7 @@ $(function() {
 
     $("a").hover(function()
     {
-        prev = $(this).text;
+        prev = $(this).text();
         $(this).text(`[ ${prev} ]`);
     }, function()
     {
