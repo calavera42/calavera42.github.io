@@ -8,4 +8,4 @@ Disallow: /imgs/
 Disallow: /js/
 Allow: /
 
-Sitemap: https://calavera.xyz/sitemap.xml/
+Sitemap: https://calavera.xyz/sitemap.xml
