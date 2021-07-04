@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'W95-sans';
+    src: url('../fonts/ms-sans-serif.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* geral */
 body
 {
