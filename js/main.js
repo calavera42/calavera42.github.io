@@ -51,7 +51,7 @@ $(function() {
                     clearInterval(x);
                     document.getElementById("title").innerHTML = "its all over";
                     $(".main-body").empty();
-                    $(".main-body").append('<video width="320" height="240" autoplay><source src="../video/nggyu.mp4" type="video/mp4"></video>');
+                    $(".main-body").append('<video autoplay><source src="../video/nggyu.mp4" type="video/mp4"></video>');
                 }
             }, 1000);
         }
