@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'W95-sans';
-    src: url('../fonts/ms-sans-serif.ttf') format('woff2');
+    src: url('../fonts/ms-sans-serif.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
