@@ -5,7 +5,7 @@ $(function() {
     var objDate = new Date();
     var hours = objDate.getHours();
 
-    if(hours >= 16 && hours <= 17){ 
+    if(hours >= 00 && hours <= 17){ 
         var audio = new Audio("../audio/heartaches.wav");
         audio.volume = 0.2;
         audio.play();
