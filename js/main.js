@@ -31,7 +31,7 @@ $(function() {
     })
 
     $("#secret").click(function(){
-        if(hours >= 16 && hours <= 18 && !rick){ 
+        if(hours >= 12 && hours <= 18 && !rick){ 
             rick = true;
             var audio = new Audio("../audio/heartaches.wav");
             audio.volume = 0.2;
