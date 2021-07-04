@@ -5,12 +5,6 @@ $(function() {
     var objDate = new Date();
     var hours = objDate.getHours();
 
-    if(hours >= 00 && hours <= 17){ 
-        var audio = new Audio("../audio/heartaches.wav");
-        audio.volume = 0.2;
-        audio.play();
-    }
-
     $("a").hover(function()
     {
         prev = $(this).text();
@@ -33,5 +27,13 @@ $(function() {
 
     $("#calavera").click(function(){
         secondClick = true;
+    })
+
+    $("#secret").click(function(){
+        if(hours >= 00 && hours <= 17){ 
+            var audio = new Audio("../audio/heartaches.wav");
+            audio.volume = 0.2;
+            audio.play();
+        }
     })
 })
