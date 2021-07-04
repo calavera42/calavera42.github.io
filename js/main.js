@@ -35,7 +35,7 @@ $(function() {
             audio.volume = 0.2;
             audio.play();
 
-            var countDownDate = new Date("Nov 10, 2022 15:37:25").getTime();
+            var countDownDate = new Date("Oct 10, 2021 15:37:25").getTime();
             var x = setInterval(function() {
                 var now = new Date().getTime();
                 var distance = countDownDate - now;
