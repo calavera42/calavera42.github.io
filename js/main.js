@@ -48,8 +48,10 @@ $(function() {
                 if (distance < 0) {
                     clearInterval(x);
                     audio.pause();
+                    document.getElementById("title").innerHTML = "its all over";
+
                     $(".main-body").empty();
-                    $(".main-body").append('<center><video autoplay><source src="../video/nggyu.mp4" type="video/mp4"></video></center>');
+                    $(".main-body").append('<center><video width="720" height="480" autoplay><source src="../video/nggyu.mp4" type="video/mp4"></video></center>');
                 }
             }, 1000);
         }
