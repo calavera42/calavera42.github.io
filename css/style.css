@@ -36,6 +36,12 @@ a, p, h1, h2, body, img
     -ms-user-select: none;
     user-select: none;
     color: white;
+    font-size: 16px;
+}
+
+.pageTitle
+{
+    margin-bottom: 32px;
 }
 
 .download
