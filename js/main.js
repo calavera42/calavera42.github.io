@@ -37,5 +37,6 @@ $(function() {
         }("c a l a v e r a "));
     }, function(){
         clearTimeout(titleTimeout);
+        $(this).text("c a l a v e r a");
     })
 })
