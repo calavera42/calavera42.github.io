@@ -29,5 +29,5 @@ $(function() {
         secondClick = true;
     })
 
-    $("#menu-placeholder").load("navmenu.html");
+    $("#menu-placeholder").load("html/navmenu.html");
 })
