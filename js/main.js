@@ -29,5 +29,5 @@ $(function() {
         secondClick = true;
     })
 
-    $("#menu-placeholder").load("html/navmenu.html");
+    $("#menu-placeholder").load("https://calavera.xyz/html/navmenu.html");
 })
