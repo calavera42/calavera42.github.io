@@ -28,6 +28,8 @@ $(function() {
     $("#calavera").click(function(){
         secondClick = true;
     })
+})
 
+$(function(){
     $("#menu-placeholder").load("https://calavera.xyz/html/navmenu.html");
 })
