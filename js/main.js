@@ -34,7 +34,7 @@ $(function() {
             titleTimeout = setTimeout(function () {
                 titleScroller(text.substr(1) + text.substr(0, 1));
             }, 500);
-        }("c a l a v e r a "));
+        }("c a l a v e r a  "));
     }, function(){
         clearTimeout(titleTimeout);
         $("#title").text("c a l a v e r a");
