@@ -2,6 +2,7 @@ $(function() {
     var prev;
     var clicks = 0;
     var secondClick = false;
+    var titleTimeout;
 
     $("a").hover(function()
     {
@@ -25,5 +26,16 @@ $(function() {
 
     $("#calavera").click(function(){
         secondClick = true;
+    })
+
+    $("#title").hover(function() {
+        (function titleScroller(text) {
+            document.title = text;
+            titleTimeout = setTimeout(function () {
+                titleScroller(text.substr(1) + text.substr(0, 1));
+            }, 500);
+        }("c a l a v e r a"));
+    }, function(){
+        clearTimeout(titleTimeout);
     })
 })
