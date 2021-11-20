@@ -2,8 +2,6 @@ $(function() {
     var prev;
     var clicks = 0;
     var secondClick = false;
-    var objDate = new Date();
-    var hours = objDate.getHours();
 
     $("a").hover(function()
     {
