@@ -1,4 +1,13 @@
-
+<script>
+    $("a").hover(function()
+    {
+        prev = $(this).text();
+        $(this).text(`[ ${prev} ]`);
+    }, function()
+    {
+        $(this).text(prev);
+    })
+</script>
 <nav id="menu">
     <ul>
         <li><span id="title">c a l a v e r a</span></li>
