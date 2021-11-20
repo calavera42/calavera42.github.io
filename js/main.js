@@ -3,14 +3,14 @@ $(function() {
     var clicks = 0;
     var secondClick = false;
 
-    $("a").hover(function()
-    {
-        prev = $(this).text();
-        $(this).text(`[ ${prev} ]`);
-    }, function()
-    {
-        $(this).text(prev);
-    })
+    //$("a").hover(function()
+    //{
+    //    prev = $(this).text();
+    //    $(this).text(`[ ${prev} ]`);
+    //}, function()
+    //{
+    //    $(this).text(prev);
+    //})
 
     $("#title").click(function(){
         clicks++;
