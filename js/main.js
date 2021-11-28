@@ -57,6 +57,12 @@ $(function() {
     })
 
     $("#bemvindo").hover(function(){
-        document.getElementById("bemvindo").textContent = welcomes[Math.floor(Math.random() * (welcomes.length - 1 + 1))];
+        var currentIndex = welcomes.indexOf(document.getElementById("bemvindo").textContent);
+        var nextIndex = Math.floor(Math.random() * (welcomes.length - 1 + 1));
+
+        while(nextIndex == currentIndex)
+            nextIndex = Math.floor(Math.random() * (welcomes.length - 1 + 1));
+
+        document.getElementById("bemvindo").textContent = welcomes[nextIndex];
     }, function() { })
 })
