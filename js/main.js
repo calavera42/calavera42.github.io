@@ -50,6 +50,6 @@ $(function() {
             console.log("to: "+titleOffest+" t: "+text);
             setTimeout(function(){ retTitle(); }, 300);
         }
-        retTitle();
+        setTimeout(function(){ retTitle(); }, 300);
     })
 })
