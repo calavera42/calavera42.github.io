@@ -105,12 +105,12 @@ a, p, h1, h2, body, img
 /* menu */
 #menu ul
 {
-    list-style:none;
+    list-style: none;
 }
 
 #menu ul li 
 {
-    display: inline;
+    display: inline-block;
 }
 
 #menu ul li a
