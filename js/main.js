@@ -30,6 +30,7 @@ $(function() {
     })
 
     $("#title").hover(function() {
+        if(canScroll) return;
         canScroll = true;
         (function titleScroller(text) {
             document.getElementById("title").textContent = text;
