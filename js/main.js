@@ -37,6 +37,6 @@ $(function() {
         }("calavera-"));
     }, function(){
         clearTimeout(titleTimeout);
-        $("#title").text("⠀calavera");
+        $("#title").text("calavera⠀");
     })
 })
