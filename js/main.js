@@ -49,5 +49,6 @@ $(function() {
             titleOffest--;
             setTimeout(retTitle(), 300);
         }
+        retTitle();
     })
 })
