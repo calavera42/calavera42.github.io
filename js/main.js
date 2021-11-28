@@ -30,7 +30,7 @@ $(function() {
 
     $("#title").hover(function() {
         (function titleScroller(text) {
-            $("#title").text(text);
+            document.getElementById("title").textContent = text;
             titleTimeout = setTimeout(function () {
                 titleScroller(text.substr(1) + text.substr(0, 1));
             }, 300);
