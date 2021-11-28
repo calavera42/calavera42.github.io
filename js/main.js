@@ -34,9 +34,9 @@ $(function() {
             titleTimeout = setTimeout(function () {
                 titleScroller(text.substr(1) + text.substr(0, 1));
             }, 300);
-        }(" calavera"));
+        }("calavera-"));
     }, function(){
         clearTimeout(titleTimeout);
-        $("#title").text(" calavera");
+        $("#title").text("calavera");
     })
 })
