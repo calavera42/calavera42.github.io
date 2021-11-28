@@ -41,7 +41,7 @@ $(function() {
         if($("#title").text() == "calavera"){
             clearTimeout(titleTimeout);
         } else {
-            setTimeout(returnTitle(), 150);
+            setTimeout(returnTitle(), 100);
         }
     })
 })
