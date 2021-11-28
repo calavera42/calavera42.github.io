@@ -33,10 +33,8 @@ $(function() {
         canScroll = true;
         (function titleScroller(text) {
             document.getElementById("title").textContent = text;
-            
             if(text == "calavera" && !canScroll)
                 return;
-
             titleTimeout = setTimeout(function () {
                 titleScroller(text.substr(1) + text.substr(0, 1));
             }, 300);
