@@ -40,8 +40,8 @@ $(function() {
         //alert($("#title").text());
         if($("#title").text() == "calavera"){
             clearTimeout(titleTimeout);
-            return;
+        } else {
+            setTimeout(returnTitle(), 150);
         }
-        setTimeout(returnTitle(), 300);
     })
 })
