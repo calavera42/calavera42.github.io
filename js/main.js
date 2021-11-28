@@ -57,6 +57,6 @@ $(function() {
     })
 
     $("#bemvindo").hover(function(){
-        document.getElementById("bemvindo").textContent = welcomes[Math.random() * (welcomes.length)];
+        document.getElementById("bemvindo").textContent = welcomes[Math.random() * (welcomes.length + 1)];
     }, function() { document.getElementById("bemvindo").textContent= "bem vindo!" })
 })
