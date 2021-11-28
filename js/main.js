@@ -37,12 +37,11 @@ $(function() {
         }("calavera"));
     }, function(){
         (function returnTitle(){
-            if($("#title").text() != "calavera"){
-                setTimeout(returnTitle(), 150);
+            if($("#title").text() == "calavera"){
+                clearTimeout(titleTimeout);
                 return;
             }
-            clearTimeout(titleTimeout);
-            $("#title").text("calavera");
+            setTimeout(returnTitle(), 15);
         })
     })
 })
