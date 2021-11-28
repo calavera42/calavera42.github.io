@@ -3,6 +3,7 @@ $(function() {
     var clicks = 0;
     var secondClick = false;
     var titleTimeout;
+    var canScroll = false;
 
     $("a").hover(function()
     {
@@ -29,26 +30,16 @@ $(function() {
     })
 
     $("#title").hover(function() {
+        canScroll = true;
         (function titleScroller(text) {
+            if(text == "calavera" && !canScroll)
+                return;
             document.getElementById("title").textContent = text;
             titleTimeout = setTimeout(function () {
                 titleScroller(text.substr(1) + text.substr(0, 1));
             }, 300);
         }("calavera"));
-    }, function()
-    {
-        clearTimeout(titleTimeout);
-        var titleOffest;
-        function retTitle()
-        {
-            titleOffest = document.getElementById("title").textContent.indexOf("c");
-            if(titleOffest == 0)
-                return;
-            var text = document.getElementById("title").textContent;
-            document.getElementById("title").textContent = text.substr(1) + text.substr(0, 1)
-            console.log("to: "+titleOffest+" t: "+text);
-            setTimeout(function(){ retTitle(); }, 300);
-        }
-        setTimeout(function(){ retTitle(); }, 300);
+    },  function() {
+        canScroll = false;
     })
 })
