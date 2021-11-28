@@ -38,7 +38,7 @@ $(function() {
     }, function(){
         (function returnTitle(){
             if($("#title").text() != "calavera"){
-                setTimeout(returnTitle(), 300);
+                setTimeout(returnTitle(), 150);
                 return;
             }
             clearTimeout(titleTimeout);
