@@ -3,7 +3,6 @@ $(function() {
     var clicks = 0;
     var secondClick = false;
     var titleTimeout;
-    var titleOffest;
 
     $("a").hover(function()
     {
@@ -39,7 +38,7 @@ $(function() {
     }, function()
     {
         clearTimeout(titleTimeout);
-        titleOffest = document.getElementById("title").textContent.indexOf("c");
+        var titleOffest = document.getElementById("title").textContent.indexOf("c");
         function retTitle()
         {
             if(titleOffest == 0)
