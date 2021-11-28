@@ -48,7 +48,7 @@ $(function() {
             document.getElementById("title").textContent = text.substr(1) + text.substr(0, 1)
             titleOffest--;
             console.log("to: "+titleOffest+" t: "+text);
-            setTimeout(retTitle(), 300);
+            setTimeout(function(){ retTitle(); }, 300);
         }
         retTitle();
     })
