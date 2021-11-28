@@ -38,14 +38,14 @@ $(function() {
     }, function()
     {
         clearTimeout(titleTimeout);
-        var titleOffest = document.getElementById("title").textContent.indexOf("c");
+        var titleOffest;
         function retTitle()
         {
+            titleOffest = document.getElementById("title").textContent.indexOf("c");
             if(titleOffest == 0)
                 return;
             var text = document.getElementById("title").textContent;
             document.getElementById("title").textContent = text.substr(1) + text.substr(0, 1)
-            titleOffest--;
             console.log("to: "+titleOffest+" t: "+text);
             setTimeout(function(){ retTitle(); }, 300);
         }
