@@ -36,8 +36,13 @@ $(function() {
             }, 300);
         }("calavera"));
     }, function(){
-        while($("#title").text() != "calavera") {}
-        clearTimeout(titleTimeout);
-        $("#title").text("calavera");
+        (function returnTitle(){
+            if($("#title").text() != "calavera"){
+                setTimeout(returnTitle(), 300);
+                return;
+            }
+            clearTimeout(titleTimeout);
+            $("#title").text("calavera");
+        })
     })
 })
