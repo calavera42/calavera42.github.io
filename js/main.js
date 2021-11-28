@@ -37,9 +37,8 @@ $(function() {
         }("calavera"));
     }, function returnTitle()
     {
-        console.log($("#title").text());
-        console.log("\n");
-        if($("#title").text() == "calavera"){
+        console.log(document.getElementById("title").textContent);
+        if(document.getElementById("title").textContent == "calavera"){
             clearTimeout(titleTimeout);
         } else {
             setTimeout(returnTitle(), 100);
