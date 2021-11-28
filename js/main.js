@@ -44,5 +44,6 @@ $(function() {
             }
             setTimeout(returnTitle(), 300);
         })
+        returnTitle();
     })
 })
