@@ -17,7 +17,7 @@ $(function() {
     $("a").hover(function()
     {
         prev = $(this).text();
-        $(this).text(`[ ${prev} ]`);
+        $(this).text(`[${prev}]`);
     }, function()
     {
         $(this).text(prev);
