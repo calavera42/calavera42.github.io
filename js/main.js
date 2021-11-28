@@ -57,9 +57,6 @@ $(function() {
     })
 
     $("#bemvindo").hover(function(){
-        var curWelcome = welcomes.indexOf(document.getElementById("bemvindo").textContent);
-        if(curWelcome + 1 > welcomes.length - 1)
-            curWelcome = -1;
-        document.getElementById("bemvindo").textContent = welcomes[curWelcome + 1];
-    })
+        document.getElementById("bemvindo").textContent = welcomes[Math.random() * (welcomes.length)];
+    }, function() { document.getElementById("bemvindo").textContent= "bem vindo!" })
 })
