@@ -58,7 +58,7 @@ $(function() {
 
     $("#bemvindo").hover(function(){
         var curWelcome = welcomes.indexOf(document.getElementById("bemvindo").textContent);
-        if(curWelcome + 1 > welcomes.length)
+        if(curWelcome + 1 > welcomes.length - 1)
             curWelcome = -1;
         document.getElementById("bemvindo").textContent = welcomes[curWelcome + 1];
     })
