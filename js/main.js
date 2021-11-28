@@ -35,15 +35,13 @@ $(function() {
                 titleScroller(text.substr(1) + text.substr(0, 1));
             }, 300);
         }("calavera"));
-    }, function(){
-        (function returnTitle(){
-            alert($("#title").text());
-            if($("#title").text() == "calavera"){
-                clearTimeout(titleTimeout);
-                return;
-            }
-            setTimeout(returnTitle(), 300);
-        })
-        returnTitle();
+    }, function returnTitle()
+    {
+        alert($("#title").text());
+        if($("#title").text() == "calavera"){
+            clearTimeout(titleTimeout);
+            return;
+        }
+        setTimeout(returnTitle(), 300);
     })
 })
