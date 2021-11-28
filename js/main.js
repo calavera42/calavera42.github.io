@@ -4,6 +4,15 @@ $(function() {
     var secondClick = false;
     var titleTimeout;
     var canScroll = false;
+    var finishedScrolling = true;
+    var welcomes = [
+        "bem vindo!",
+        "welcome!",
+        "¡bienvenido!",
+        "benvenuto!",
+        "bienvenue!",
+        "willkommen!",
+    ];
 
     $("a").hover(function()
     {
@@ -30,17 +39,25 @@ $(function() {
     })
 
     $("#title").hover(function() {
-        if(canScroll) return;
+        if(!finishedScrolling) return;
         canScroll = true;
+        finishedScrolling = false;
         (function titleScroller(text) {
             document.getElementById("title").textContent = text;
-            if(text == "calavera" && !canScroll)
+            if(text == "calavera" && !canScroll){
+                finishedScrolling = true;
                 return;
+            }
             titleTimeout = setTimeout(function () {
                 titleScroller(text.substr(1) + text.substr(0, 1));
             }, 300);
         }("calavera"));
     },  function() {
         canScroll = false;
+    })
+
+    $("#bemvindo").hover(function(){
+        var curWelcome = welcomes.indexOf(document.getElementById("title").textContent);
+        document.getElementById("title").textContent = welcomes[curWelcome + 1];
     })
 })
