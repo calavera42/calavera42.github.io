@@ -3,6 +3,7 @@ $(function() {
     var clicks = 0;
     var secondClick = false;
     var titleTimeout;
+    var titleOffest;
 
     $("a").hover(function()
     {
@@ -35,13 +36,18 @@ $(function() {
                 titleScroller(text.substr(1) + text.substr(0, 1));
             }, 300);
         }("calavera"));
-    }, function returnTitle()
+    }, function()
     {
-        console.log(document.getElementById("title").textContent);
-        if(document.getElementById("title").textContent == "calavera"){
-            clearTimeout(titleTimeout);
-        } else {
-            setTimeout(returnTitle(), 100);
+        clearTimeout(titleTimeout);
+        titleOffest = document.getElementById("title").textContent.indexOf("c");
+        function retTitle()
+        {
+            if(titleOffest == 0)
+                return;
+            var text = document.getElementById("title").textContent;
+            document.getElementById("title").textContent = text.substr(1) + text.substr(0, 1)
+            titleOffest--;
+            setTimeout(retTitle(), 300);
         }
     })
 })
