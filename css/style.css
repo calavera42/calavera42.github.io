@@ -1,12 +1,3 @@
-@font-face {
-    font-family: 'W95-sans';
-    src: url('../font/w95fa.woff2') format('woff2'),
-         url('../font/w95fa.woff') format('woff'),
-         url('../font/w95fa.otf') format('otf');
-    font-weight: normal;
-    font-style: normal;
-}
-
 /* geral */
 body
 {
@@ -21,6 +12,8 @@ body
     padding: 0;
     width: 100%;
     height: 100%;
+
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #title
