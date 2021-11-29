@@ -5,7 +5,6 @@ $(function() {
     var titleTimeout;
     var canScroll = false;
     var finishedScrolling = true;
-    var lastWelcome = 0;
     var welcomes = [
         "bem vindo!",
         "welcome!",
@@ -57,10 +56,13 @@ $(function() {
         canScroll = false;
     })
 
-    setInterval(function(){
-        if(lastWelcome + 1 > welcomes.length - 1)
-            lastWelcome = -1;
-        document.getElementById("bemvindo").textContent = welcomes[lastWelcome + 1];
-        lastWelcome++;
-    }, 1000);
+    $("#bemvindo").hover(function(){
+        var currentIndex = welcomes.indexOf(document.getElementById("bemvindo").textContent);
+        var nextIndex = Math.floor(Math.random() * (welcomes.length - 1 + 1));
+
+        while(nextIndex == currentIndex)
+            nextIndex = Math.floor(Math.random() * (welcomes.length - 1 + 1));
+
+        document.getElementById("bemvindo").textContent = welcomes[nextIndex];
+    }, function() { })
 })
