@@ -61,6 +61,7 @@ $(function() {
         if(lastWelcome + 1 > welcomes.length - 1)
             lastWelcome = 0;
         document.getElementById("bemvindo").textContent = welcomes[lastWelcome + 1];
+        lastWelcome++;
     }, function() {
         document.getElementById("bemvindo").textContent = welcomes[0];
      })
