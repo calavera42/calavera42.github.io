@@ -62,5 +62,5 @@ $(function() {
             lastWelcome = -1;
         document.getElementById("bemvindo").textContent = welcomes[lastWelcome + 1];
         lastWelcome++;
-    }, 100);
+    }, 1000);
 })
