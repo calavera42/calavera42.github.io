@@ -19,7 +19,6 @@ body
 #console
 {
     overflow: auto;
-    border-style: groove;
     resize: both;
     position: absolute;
     width: 400px;

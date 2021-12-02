@@ -16,7 +16,12 @@ $(function() {
 
     //console =========================================================================
     var cd = $("#console");
-    cd.draggable().resizable();
+    cd.draggable().resizable({handles: {
+        'ne': '#negrip',
+        'se': '#segrip',
+        'sw': '#swgrip',
+        'nw': '#nwgrip'
+    }});
     cd.hide();
     if (typeof console  != "undefined") 
     if (typeof console.log != 'undefined')
@@ -26,10 +31,8 @@ $(function() {
 
     console.log = function(message) {
         console.olog(message);
-        cd.resizable();
         cd.append('<p>' + message + '</p>');
         cd.scrollTop(cd.prop("scrollHeight"));
-        cd.resizable();
     };
     console.error = console.debug = console.info =  console.log
     //=================================================================================
