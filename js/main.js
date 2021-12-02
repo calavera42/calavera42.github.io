@@ -26,7 +26,10 @@ $(function() {
 
     console.log = function(message) {
         console.olog(message);
+        cd.resizable();
         cd.append('<p>' + message + '</p>');
+        cd.scrollTop(cd.prop("scrollHeight"));
+        cd.resizable();
     };
     console.error = console.debug = console.info =  console.log
     //=================================================================================
