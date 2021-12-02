@@ -1,9 +1,9 @@
 /* geral */
 body
 {
-    background-image: url("../imgs/background.png");
+    /*background-image: url("../imgs/background.png");
     background-repeat: repeat;
-    background-size: 384px 216px;
+    background-size: 384px 216px;*/
 
     color: white;
     background-color: black;
@@ -14,6 +14,13 @@ body
     height: 100%;
 
     font-family: 'Times New Roman', Times, serif;
+}
+
+canvas 
+{
+    display:block;
+    position: absolute;
+    z-index: -1;
 }
 
 #title
