@@ -75,7 +75,7 @@ $(function() {
     var elements = document.querySelectorAll("a, p, span");
 
     function transition(text, element, progress, cycles){
-        if(cycles == 100){
+        if(cycles >= 100 / text.length){
             progress++;
             cycles = 0;
         }
@@ -89,7 +89,7 @@ $(function() {
             return;
         setTimeout(() => {
             transition(text, element, progress, cycles)
-        }, 3);
+        }, 1);
     }
 
     elements.forEach(element => {
