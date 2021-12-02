@@ -110,6 +110,7 @@ $(function() {
     $("body").keypress(function(event){
         if(event.which == 47){
             $("#console").show();
+            console.log("user requested debug console");
         }
     });
 })
