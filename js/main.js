@@ -79,6 +79,7 @@ $(function() {
         canScroll = true;
         finishedScrolling = false;
         (function titleScroller(text) {
+            console.log("tx = "+text+"; cs = " + canScroll + "; fs = " + finishedScrolling);
             document.getElementById("title").textContent = text;
             if(text == "calavera" && !canScroll){
                 finishedScrolling = true;
@@ -110,7 +111,7 @@ $(function() {
     $("body").keypress(function(event){
         if(event.which == 47){
             $("#console").show();
-            console.log("user requested debug console");
+            console.log("o usuário solicitou a abertura do console de testes.");
         }
     });
 })
