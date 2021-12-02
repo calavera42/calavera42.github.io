@@ -18,16 +18,18 @@ body
 
 #console
 {
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow: auto;
     border-style: groove;
-    border-top-width: 40px;
     resize: both;
     position: absolute;
-    z-index: 1;
-    width: 100px;
-    height: 100px;
+    width: 400px;
+    height: 310px;
     background-color: black;
+}
+
+.ui-resizable-se {
+    right: -5px;
+    bottom: -5px;
 }
 
 #title
