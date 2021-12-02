@@ -16,8 +16,8 @@ $(function() {
 
     //console =========================================================================
     $("#console").hide();
-    $("#console").resizable();
     $("#console").draggable();
+    $("#console").resizable();
     if (typeof console  != "undefined") 
     if (typeof console.log != 'undefined')
         console.olog = console.log;
