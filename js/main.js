@@ -109,6 +109,8 @@ $(function() {
     //=================================================================================
 
     $("body").keypress(function(event){
-        alert(event.which); 
+        if(event.which == 47){
+            $("#console").show();
+        }
     });
 })
