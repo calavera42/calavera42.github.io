@@ -25,9 +25,10 @@ $(function() {
 
         element.innerText = text.substr(0, progress);
         for(var i = 0; i < text.length - progress; i++){
-            if(text[i] == ' ')
-                continue;
-            element.innerText += glyphs[Math.floor(glyphs.length * Math.random())];
+            if(!glyphs.includes(text[i]))
+                element.innerText += text[i];
+            else
+                element.innerText += glyphs[Math.floor(glyphs.length * Math.random())];
         }
         cycles++;
         if(progress == text.length)
