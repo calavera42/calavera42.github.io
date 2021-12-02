@@ -21,6 +21,8 @@ body
     border-style: groove;
     position: absolute;
     z-index: 1;
+    width: 100px;
+    height: 100px;
 }
 
 #title
