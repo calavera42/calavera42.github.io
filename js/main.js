@@ -30,7 +30,6 @@ $(function() {
         cycles++;
         if(progress == text.length)
         {
-            element.innerText = text;
             canAlterElements = true;
             return;
         }
