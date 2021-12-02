@@ -1,7 +1,5 @@
 $(function() {
     var prev;
-    var clicks = 0;
-    var secondClick = false;
     var canScroll = false;
     var finishedScrolling = true;
     var canAlterElements = false;
@@ -45,6 +43,7 @@ $(function() {
     });
     //=================================================================================
 
+    //estilo de href ==================================================================
     $("a").hover(function()
     {
         if(!canAlterElements) return;
@@ -55,24 +54,9 @@ $(function() {
         if(!canAlterElements) return; 
         $(this).text(prev);
     })
+    //=================================================================================
 
-    $("#title").click(() => {
-        if(!canAlterElements) return;
-        clicks++;
-        if(clicks == 60 && secondClick)
-        {
-            clicks = 120;
-            var audio = new Audio("../audio/serenata.wav");
-            audio.volume = 0.2;
-            audio.play();
-        }
-    })
-
-    $("#calavera").click(() => {
-        if(!canAlterElements) return;
-        secondClick = true;
-    })
-
+    //rolagem do título ===============================================================
     $("#title").hover(() => {
         if(!canAlterElements) return;
         if(!finishedScrolling) return;
@@ -92,7 +76,9 @@ $(function() {
         if(!canAlterElements) return;
         canScroll = false;
     })
+    //=================================================================================
 
+    //bem vindo em outras línguas =====================================================
     $("#bemvindo").hover(() => {
         if(!canAlterElements) return;
         var currentIndex = welcomes.indexOf(document.getElementById("bemvindo").textContent);
@@ -103,6 +89,5 @@ $(function() {
 
         document.getElementById("bemvindo").textContent = welcomes[nextIndex];
     }, () => { })
-
-    
+    //=================================================================================
 })
