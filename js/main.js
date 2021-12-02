@@ -109,6 +109,6 @@ $(function() {
     //=================================================================================
 
     $("body").keypress(function(event){
-        alert(String.fromCharCode(event.which)); 
+        alert(event.which); 
     });
 })
