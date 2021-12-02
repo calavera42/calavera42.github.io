@@ -20,6 +20,8 @@ body
 {
     overflow-x: hidden;
     overflow-y: auto;
+    border-style: groove;
+    border-top-width: 40px;
     resize: both;
     position: absolute;
     z-index: 1;
