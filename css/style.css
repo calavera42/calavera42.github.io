@@ -18,13 +18,8 @@ body
 
 #console
 {
-    overflow: auto;
-    resize: both;
-    position: absolute;
-    width: 400px;
-    height: 310px;
-    z-index: 1;
-    background-color: black;
+    bottom: 0px;
+    right: 0px;
 }
 
 .ui-resizable-handle ui-resizable-sw

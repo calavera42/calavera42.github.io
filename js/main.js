@@ -16,13 +16,6 @@ $(function() {
 
     //console =========================================================================
     var cd = $("#console");
-    cd.draggable().resizable({handles: {
-        'ne': '#negrip',
-        'se': '#segrip',
-        'sw': '#swgrip',
-        'nw': '#nwgrip'
-    }});
-    cd.hide();
     if (typeof console  != "undefined") 
     if (typeof console.log != 'undefined')
         console.olog = console.log;
