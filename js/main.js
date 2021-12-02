@@ -25,6 +25,8 @@ $(function() {
 
         element.innerText = text.substr(0, progress);
         for(var i = 0; i < text.length - progress; i++){
+            if(text[i] == ' ')
+                continue;
             element.innerText += glyphs[Math.floor(glyphs.length * Math.random())];
         }
         cycles++;
