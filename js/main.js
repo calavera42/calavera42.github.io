@@ -15,8 +15,9 @@ $(function() {
     var elements = document.querySelectorAll("a, p, span");
 
     //console =========================================================================
-    $("#console").draggable().resizable();
-    $("#console").hide();
+    var cd = $("#console");
+    cd.draggable().resizable();
+    cd.hide();
     if (typeof console  != "undefined") 
     if (typeof console.log != 'undefined')
         console.olog = console.log;
@@ -25,8 +26,8 @@ $(function() {
 
     console.log = function(message) {
         console.olog(message);
-        $("#console").append('<p>' + message + '</p>');
-        $("#console").scrollTop = $("#console").scrollHeight;
+        cd.append('<p>' + message + '</p>');
+        cd.scrollTop(cd.prop("scrollHeight"));
     };
     console.error = console.debug = console.info =  console.log
     //=================================================================================
