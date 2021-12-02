@@ -16,6 +16,13 @@ body
     font-family: 'Times New Roman', Times, serif;
 }
 
+#console
+{
+    border-style: groove;
+    position: absolute;
+    z-index: 1;
+}
+
 #title
 {
     padding-right: 20px;
