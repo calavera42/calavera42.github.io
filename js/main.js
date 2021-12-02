@@ -108,7 +108,7 @@ $(function() {
     }, () => { })
     //=================================================================================
 
-    $("body").on("keydown", function(e){
-        console.log(e);
-    })
+    $("body").keypress(function(event){
+        alert(String.fromCharCode(event.which)); 
+    });
 })
