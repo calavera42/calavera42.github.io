@@ -3,6 +3,7 @@ $(function() {
     var canScroll = false;
     var finishedScrolling = true;
     var canAlterElements = false;
+    var logs = 0;
     var welcomes = [
         "bem vindo!",
         "welcome!",
@@ -26,6 +27,11 @@ $(function() {
         console.olog(message);
         cd.append('<p>' + message + '</p>');
         cd.scrollTop(cd.prop("scrollHeight"));
+        logs++;
+        if(logs == 15){
+            cd.empty();
+            logs = 0;
+        }
     };
     console.error = console.debug = console.info =  console.log
     //=================================================================================
