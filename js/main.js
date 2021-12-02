@@ -108,7 +108,7 @@ $(function() {
     }, () => { })
     //=================================================================================
 
-    $("document").on("keydown", function(e){
+    $("body").on("keydown", function(e){
         console.log(e);
     })
 })
