@@ -28,7 +28,8 @@ $(function() {
         cd.append('<p>' + message + '</p>');
         cd.scrollTop(cd.prop("scrollHeight"));
         logs++;
-        if(logs == 15){
+        if(logs == 10){
+            console.log("console resetado.");
             cd.empty();
             logs = 0;
         }
