@@ -19,7 +19,7 @@ body
 #console
 {
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
     resize: both;
     position: absolute;
     z-index: 1;
