@@ -16,6 +16,7 @@ $(function() {
     var glyphs = "abcdefghijklmnopqrstuvwxyz";
     var elements = document.querySelectorAll("a, p, span");
 
+    //transição de texto ==============================================================
     function transition(text, element, progress, cycles){
         if(cycles >= 100 / text.length){
             progress++;
@@ -41,6 +42,7 @@ $(function() {
     elements.forEach(element => {
         transition(element.innerText, element, 0, 0);
     });
+    //=================================================================================
 
     $("a").hover(() =>
     {
