@@ -75,13 +75,18 @@ $(function() {
     var elements = document.querySelectorAll("a, p, span");
 
     function transition(text, element, progress, cycles){
-        if(cycles == 100)
+        if(cycles == 100){
             progress++;
+            cycles = 0;
+        }
+
         element.innerText = text.substr(0, progress);
         for(var i = 0; i < text.length - progress; i++){
             element.innerText += glyphs[Math.floor(glyphs.length * Math.random())];
         }
         cycles++;
+        if(progress == text.length)
+            return;
         setTimeout(() => {
             transition(text, element, progress, cycles)
         }, 3);
