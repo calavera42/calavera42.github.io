@@ -86,7 +86,10 @@ $(function() {
         }
         cycles++;
         if(progress == text.length)
+        {
+            element.innerText = text;
             return;
+        }
         setTimeout(() => {
             transition(text, element, progress, cycles)
         }, 1);
