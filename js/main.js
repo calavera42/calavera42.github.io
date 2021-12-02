@@ -16,7 +16,7 @@ $(function() {
 
     //transição de texto ==============================================================
     function transition(text, element, progress, cycles){
-        if(cycles >= 100 / text.length){
+        if(cycles >= 50 / text.length){
             progress++;
             cycles = 0;
         }
