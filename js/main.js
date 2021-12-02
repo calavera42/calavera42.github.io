@@ -2,9 +2,9 @@ $(function() {
     var prev;
     var clicks = 0;
     var secondClick = false;
-    var titleTimeout;
     var canScroll = false;
     var finishedScrolling = true;
+    var canAlterElements = false;
     var welcomes = [
         "bem vindo!",
         "welcome!",
@@ -13,64 +13,6 @@ $(function() {
         "bienvenue!",
         "willkommen!",
     ];
-
-    $("a").hover(function()
-    {
-        prev = $(this).text();
-        $(this).text(`[${prev}]`);
-    }, function()
-    {
-        $(this).text(prev);
-    })
-
-    $("#title").click(function(){
-        clicks++;
-        if(clicks == 60 && secondClick)
-        {
-            clicks = 120;
-            var audio = new Audio("../audio/serenata.wav");
-            audio.volume = 0.2;
-            audio.play();
-        }
-    })
-
-    $("#calavera").click(function(){
-        secondClick = true;
-    })
-
-    $("#title").hover(function() {
-        if(!finishedScrolling) return;
-        canScroll = true;
-        finishedScrolling = false;
-        (function titleScroller(text) {
-            document.getElementById("title").textContent = text;
-            if(text == "calavera" && !canScroll){
-                finishedScrolling = true;
-                return;
-            }
-            titleTimeout = setTimeout(function () {
-                titleScroller(text.substr(1) + text.substr(0, 1));
-            }, 300);
-        }("calavera"));
-    },  function() {
-        canScroll = false;
-    })
-
-    $("#bemvindo").hover(function(){
-        var currentIndex = welcomes.indexOf(document.getElementById("bemvindo").textContent);
-        var nextIndex = Math.floor(Math.random() * (welcomes.length - 1 + 1));
-
-        if(nextIndex == currentIndex)
-            nextIndex++;
-
-        document.getElementById("bemvindo").textContent = welcomes[nextIndex];
-    }, function() { })
-
-    
-})
-
-//transição do texto
-$(function() {
     var glyphs = "abcdefghijklmnopqrstuvwxyz";
     var elements = document.querySelectorAll("a, p, span");
 
@@ -88,6 +30,7 @@ $(function() {
         if(progress == text.length)
         {
             element.innerText = text;
+            canAlterElements = true;
             return;
         }
         setTimeout(() => {
@@ -98,4 +41,66 @@ $(function() {
     elements.forEach(element => {
         transition(element.innerText, element, 0, 0);
     });
+
+    $("a").hover(() =>
+    {
+        if(!canAlterElements) return;
+
+        prev = $(this).text();
+        $(this).text(`[${prev}]`);
+    }, function()
+    {
+        if(!canAlterElements) return;
+        $(this).text(prev);
+    })
+
+    $("#title").click(() => {
+        if(!canAlterElements) return;
+        clicks++;
+        if(clicks == 60 && secondClick)
+        {
+            clicks = 120;
+            var audio = new Audio("../audio/serenata.wav");
+            audio.volume = 0.2;
+            audio.play();
+        }
+    })
+
+    $("#calavera").click(() => {
+        if(!canAlterElements) return;
+        secondClick = true;
+    })
+
+    $("#title").hover(() => {
+        if(!canAlterElements) return;
+        if(!finishedScrolling) return;
+        canScroll = true;
+        finishedScrolling = false;
+        (function titleScroller(text) {
+            document.getElementById("title").textContent = text;
+            if(text == "calavera" && !canScroll){
+                finishedScrolling = true;
+                return;
+            }
+            setTimeout(() => {
+                titleScroller(text.substr(1) + text.substr(0, 1));
+            }, 300);
+        }("calavera"));
+    },  function() {
+        if(!canAlterElements) return;
+        canScroll = false;
+    })
+
+    $("#bemvindo").hover(() => {
+        if(!canAlterElements) return;
+        var currentIndex = welcomes.indexOf(document.getElementById("bemvindo").textContent);
+        var nextIndex = Math.floor(Math.random() * (welcomes.length - 1 + 1));
+
+        if(nextIndex == currentIndex)
+            nextIndex++;
+
+        document.getElementById("bemvindo").textContent = welcomes[nextIndex];
+    }, () => { })
+
+    
 })
