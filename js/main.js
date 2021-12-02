@@ -60,9 +60,34 @@ $(function() {
         var currentIndex = welcomes.indexOf(document.getElementById("bemvindo").textContent);
         var nextIndex = Math.floor(Math.random() * (welcomes.length - 1 + 1));
 
-        while(nextIndex == currentIndex)
-            nextIndex = Math.floor(Math.random() * (welcomes.length - 1 + 1));
+        if(nextIndex == currentIndex)
+            nextIndex++;
 
         document.getElementById("bemvindo").textContent = welcomes[nextIndex];
     }, function() { })
+
+    
+})
+
+//transição do texto
+$(function() {
+    var glyphs = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";
+    var elements = document.querySelectorAll("a, p, span");
+
+    function transition(text, element, progress, cycles){
+        if(cycles == 100)
+            progress++;
+        element.innerText = text.substr(0, progress);
+        for(var i = 0; i < text.length - progress; i++){
+            element.innerText += glyphs[Math.floor(glyphs.length * Math.random())];
+        }
+        cycles++;
+        setTimeout(() => {
+            transition(text, element, progress, cycles)
+        }, 3);
+    }
+
+    elements.forEach(element => {
+        transition(element.innerText, element, 0, 0);
+    });
 })
