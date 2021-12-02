@@ -99,8 +99,6 @@ $(function() {
 
     var matrix = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%";
 
-    matrix = matrix.split("");
-
     var font_size = 10;
     var columns = c.width/font_size;
     
