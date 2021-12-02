@@ -27,7 +27,6 @@ $(function() {
     console.log = function(message) {
         console.olog(message);
         cd.append('<p>' + message + '</p>');
-        cd.scrollTop(cd.prop("scrollHeight"));
     };
     console.error = console.debug = console.info =  console.log
     //=================================================================================
