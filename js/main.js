@@ -46,13 +46,10 @@ $(function() {
 
     $("a").hover(() =>
     {
-        if(!canAlterElements) return;
-
         prev = $(this).text();
         $(this).text(`[${prev}]`);
     }, function()
     {
-        if(!canAlterElements) return;
         $(this).text(prev);
     })
 
