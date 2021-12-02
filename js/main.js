@@ -25,7 +25,8 @@ $(function() {
 
     console.log = function(message) {
         console.olog(message);
-        $('#console').append('<p>' + message + '</p>');
+        $("#console").append('<p>' + message + '</p>');
+        $("#console").scrollTop = elem.scrollHeight;
     };
     console.error = console.debug = console.info =  console.log
     //=================================================================================
