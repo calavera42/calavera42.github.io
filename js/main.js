@@ -84,8 +84,8 @@ $(function() {
         var currentIndex = welcomes.indexOf(document.getElementById("bemvindo").textContent);
         var nextIndex = Math.floor(Math.random() * (welcomes.length - 1 + 1));
 
-        if(nextIndex == currentIndex)
-            nextIndex++;
+        while(currentIndex == nextIndex)
+            nextIndex = Math.floor(Math.random() * (welcomes.length - 1 + 1));
 
         document.getElementById("bemvindo").textContent = welcomes[nextIndex];
     }, () => { })
