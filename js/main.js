@@ -71,7 +71,7 @@ $(function() {
 
 //transição do texto
 $(function() {
-    var glyphs = "abcdefghijklmnopqrstuvwxyz1234567890";
+    var glyphs = "abcdefghijklmnopqrstuvwxyz";
     var elements = document.querySelectorAll("a, p, span");
 
     function transition(text, element, progress, cycles){
