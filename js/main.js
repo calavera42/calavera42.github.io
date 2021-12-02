@@ -29,9 +29,9 @@ $(function() {
         cd.scrollTop(cd.prop("scrollHeight"));
         logs++;
         if(logs == 10){
-            console.log("console resetado.");
             cd.empty();
             logs = 0;
+            console.log("console limpo");
         }
     };
     console.error = console.debug = console.info =  console.log
