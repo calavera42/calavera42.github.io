@@ -21,7 +21,6 @@ body
     overflow-x: hidden;
     overflow-y: scroll;
     resize: both;
-    border-style: groove;
     position: absolute;
     z-index: 1;
     width: 100px;
