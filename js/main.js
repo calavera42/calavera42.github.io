@@ -15,7 +15,7 @@ $(function() {
     var elements = document.querySelectorAll("a, p, span");
 
     //console =========================================================================
-    $("#console").draggable().resizable();
+    $("#console").resizable();
     $("#console").hide();
     if (typeof console  != "undefined") 
     if (typeof console.log != 'undefined')
