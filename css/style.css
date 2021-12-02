@@ -20,10 +20,6 @@ body
 {
     bottom: 0px;
     right: 0px;
-}
-
-.ui-resizable-handle ui-resizable-sw
-{
     position: absolute;
 }
 
