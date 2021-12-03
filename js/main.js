@@ -24,15 +24,16 @@ $(function() {
         console.olog = function() {};
 
     console.log = function(message) {
-        console.olog(message);
-        cd.append('<p>' + message + '</p>');
-        cd.scrollTop(cd.prop("scrollHeight"));
-        logs++;
         if(logs == 10){
             cd.empty();
             logs = 0;
             console.log("console limpo");
         }
+
+        console.olog(message);
+        cd.append('<p>' + message + '</p>');
+        cd.scrollTop(cd.prop("scrollHeight"));
+        logs++;
     };
     console.error = console.debug = console.info =  console.log
     //=================================================================================
