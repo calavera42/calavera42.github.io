@@ -25,7 +25,7 @@ $(function() {
 
     console.log = function(message) {
         if(logs == 10){
-            cd.empty();
+            $('#console p').first().remove();
             logs = 0;
             console.log("console limpo");
         }
