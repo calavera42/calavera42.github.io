@@ -4,6 +4,7 @@ $(function() {
     var finishedScrolling = true;
     var canAlterElements = false;
     var logs = 0;
+    var lines = 0;
     var welcomes = [
         "bem vindo!",
         "welcome!",
@@ -28,9 +29,9 @@ $(function() {
             $('#console p').first().remove();
             logs--;
         }
-
+        lines++;
         console.olog(message);
-        cd.append('<p>[console] ' + message + '</p>');
+        cd.append('<p><span style="color: red">[console]</span> ' + message + '</p>');
         cd.scrollTop(cd.prop("scrollHeight"));
         logs++;
     };
