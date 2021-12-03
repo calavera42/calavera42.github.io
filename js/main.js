@@ -24,9 +24,9 @@ $(function() {
         console.olog = function() {};
 
     console.log = function(message) {
-        if(logs == 10){
+        if(logs >= 10){
             $('#console p').first().remove();
-            logs = 0;
+            logs--;
             console.log("console limpo");
         }
 
