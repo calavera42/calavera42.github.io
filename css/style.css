@@ -19,6 +19,7 @@ body
 #console
 {
     position: absolute;
+    max-height: 32%;
     width: 25%;
     bottom: 5px;
     right: 5px;
