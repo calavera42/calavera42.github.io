@@ -18,9 +18,8 @@ body
 
 #console
 {
-    font-size: smaller;
     position: absolute;
-    width: 25%;
+    width: 35%;
     bottom: 5px;
     right: 5px;
 }
