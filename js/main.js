@@ -31,7 +31,7 @@ $(function() {
         }
 
         console.olog(message);
-        cd.append('<p>[console] ' + message + '</p>');
+        cd.append('<p><p class="redWine">[console]</p> ' + message + '</p>');
         cd.scrollTop(cd.prop("scrollHeight"));
         logs++;
     };
