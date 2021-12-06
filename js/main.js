@@ -18,6 +18,7 @@ $(function() {
 
     //console =========================================================================
     var cd = $("#console");
+    cd.hide();
     if (typeof console  != "undefined") 
     if (typeof console.log != 'undefined')
         console.olog = console.log;

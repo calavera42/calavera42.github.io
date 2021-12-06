@@ -1,5 +1,6 @@
 var secondClick = false;
 var clicks = 0;
+var typed = "";
 
 $("#title").click(() => {
     clicks++;
@@ -11,6 +12,12 @@ $("#title").click(() => {
         audio.play();
     }
 })
+
+$("body").keypress(function(event){
+    typed += String.fromCharCode(event.which);
+    if(typed.includes("hesawme"))
+        window.location = "https://calavera.xyz/html/secret";
+});
 
 $("#calavera").click(() => {
     secondClick = true;
