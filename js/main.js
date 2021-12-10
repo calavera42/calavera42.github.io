@@ -50,7 +50,7 @@ $(function() {
             }
         })
         if (!response.ok) throw new Error(`Error status code: ${response.status}`)
-        return JSON.parse(await response.json())
+        return JSON.parse(response.json())
     }
 
     var user = GetUser("473226092988203039");
