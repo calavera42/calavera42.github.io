@@ -40,7 +40,7 @@ $(function() {
     //=================================================================================
 
     //pegar usuário do discord ========================================================
-    const token = 'YOUR_TOKEN' //n vale nem a pena correr atrás, é um bot privado q n tá em nenhum servidor e não tem nada de interessante.
+    const token = 'OTE4NjY2NDU2ODIzMTI0MDA5.YbKkzw.Vdvth3O9UxbaD8auNoPuFJBuH1Q' //n vale nem a pena correr atrás, é um bot privado q n tá em nenhum servidor e não tem nada de interessante.
 
     function GetUser(id)
     {
