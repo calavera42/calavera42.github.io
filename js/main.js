@@ -45,6 +45,9 @@ $(function() {
     function GetUser(id)
     {
         var response = fetch(`https://discord.com/api/v9/users/${id}`, {
+            method: 'POST',
+            mode: 'no-cors',
+            credentials: 'same-origin',
             headers: {
             Authorization: `Bot ${token}`
             }
