@@ -2,7 +2,7 @@ $(function() {
     var prev;
     var canScroll = false;
     var finishedScrolling = true;
-    var canAlterElements = false;
+    var canAlterElements = true;
     var logs = 0;
     var lines = 0;
     var welcomes = [
@@ -42,6 +42,8 @@ $(function() {
     //transição de texto ==============================================================
     function transition(text, element, progress, cycles){
         if(window.location == "https://calavera.xyz/html/reach-me") return;
+
+        canAlterElements = false;
         if(cycles >= 50 / text.length){
             progress++;
             cycles = 0;
