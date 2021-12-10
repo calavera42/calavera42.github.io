@@ -41,6 +41,7 @@ $(function() {
 
     //transição de texto ==============================================================
     function transition(text, element, progress, cycles){
+        if(window.location == "https://calavera.xyz/html/reach-me") return;
         if(cycles >= 50 / text.length){
             progress++;
             cycles = 0;
