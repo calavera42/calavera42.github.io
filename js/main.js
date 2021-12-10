@@ -39,6 +39,24 @@ $(function() {
     console.error = console.debug = console.info =  console.log
     //=================================================================================
 
+    //pegar usuário do discord ========================================================
+    const token = 'YOUR_TOKEN' //n vale nem a pena correr atrás, é um bot privado q n tá em nenhum servidor e não tem nada de interessante.
+
+    function GetUser(id)
+    {
+        var response = await fetch(`https://discord.com/api/v9/users/${id}`, {
+            headers: {
+            Authorization: `Bot ${token}`
+            }
+        })
+        if (!response.ok) throw new Error(`Error status code: ${response.status}`)
+        return JSON.parse(await response.json())
+    }
+
+    var user = GetUser("473226092988203039");
+    document.getElementById("discord").innerText = `${user.username}#${user.discriminator}`;
+    //=================================================================================
+
     //transição de texto ==============================================================
     function transition(text, element, progress, cycles){
         if(cycles >= 50 / text.length){
