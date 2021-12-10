@@ -44,7 +44,7 @@ $(function() {
 
     function GetUser(id)
     {
-        var response = await fetch(`https://discord.com/api/v9/users/${id}`, {
+        var response = fetch(`https://discord.com/api/v9/users/${id}`, {
             headers: {
             Authorization: `Bot ${token}`
             }
