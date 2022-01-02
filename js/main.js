@@ -40,31 +40,31 @@ $(function() {
     //=================================================================================
 
     //transição de texto ==============================================================
-    function transition(text, element, progress, cycles){
-        if(window.location == "https://calavera.xyz/html/reach-me") return;
+    //function transition(text, element, progress, cycles){
+        //if(window.location == "https://calavera.xyz/html/reach-me") return;
 
-        canAlterElements = false;
-        if(cycles >= 50 / text.length){
-            progress++;
-            cycles = 0;
-        }
+        //canAlterElements = false;
+        //if(cycles >= 50 / text.length){
+            //progress++;
+            //cycles = 0;
+        //}
 
-        element.innerText = text.substr(0, progress);
-        for(var i = 0; i < text.length - progress; i++){
-            if(text[i] == ' ')
-                continue;
-            element.innerText += glyphs[Math.floor(glyphs.length * Math.random())];
-        }
-        cycles++;
-        if(progress == text.length)
-        {
-            canAlterElements = true;
-            return;
-        }
-        setTimeout(() => {
-            transition(text, element, progress, cycles)
-        }, 1);
-    }
+        //element.innerText = text.substr(0, progress);
+        //for(var i = 0; i < text.length - progress; i++){
+            //if(text[i] == ' ')
+                //continue;
+            //element.innerText += glyphs[Math.floor(glyphs.length * Math.random())];
+        //}
+        //cycles++;
+        //if(progress == text.length)
+        //{
+            //canAlterElements = true;
+            //return;
+        //}
+        //setTimeout(() => {
+            //transition(text, element, progress, cycles)
+        //}, 1);
+    //}
 
     elements.forEach(element => {
         transition(element.innerText, element, 0, 0);
