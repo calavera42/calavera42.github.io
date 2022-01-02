@@ -66,9 +66,9 @@ $(function() {
         //}, 1);
     //}
 
-    elements.forEach(element => {
-        transition(element.innerText, element, 0, 0);
-    });
+    //elements.forEach(element => {
+        //transition(element.innerText, element, 0, 0);
+    //});
     //=================================================================================
 
     //estilo de href ==================================================================
