@@ -26,7 +26,7 @@ $("#calavera").click(() => {
 $(function(){
     if(window.location == "https://calavera.xyz/periquito"){
         if(confirm("Executar código K.R.E.P.S.K.I.? (OK = Sim, CANCEL = Não)\nLembrando que a responsabilidade de tal ato não é da pessoa que clicar \"OK\".")){
-            $("#periquito").html("<video src=\"https://calavera.xyz/video/cheiademarra.mp4\" class=\"center\"></video>");
+            $("#periquito").html("<video controls autoplay>  <source src=\"https://calavera.xyz/video/cheiademarra.mp4\" type=\"video/mp4\"> </video>");
         }
     }
 
