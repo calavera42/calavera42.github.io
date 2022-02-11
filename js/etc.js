@@ -22,3 +22,12 @@ $("body").keypress(function(event){
 $("#calavera").click(() => {
     secondClick = true;
 })
+
+$(function(){
+    if(window.location == "https://calavera.xyz/periquito"){
+        if(confirm("Executar código K.R.E.P.S.K.I.? (OK = Sim, CANCEL = Não)\nLembrando que a responsabilidade de tal ato não é da pessoa que clicar \"OK\".")){
+            $("#periquito").html("<video src=\"https://calavera.xyz/video/cheiademarra.mp4\"></video>");
+        }
+    }
+
+})
