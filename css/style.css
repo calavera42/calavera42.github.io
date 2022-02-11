@@ -16,6 +16,10 @@ body
     font-family: 'Times New Roman', Times, serif;
 }
 
+.noDecor {
+    text-decoration: none;
+}
+
 #console
 {
     position: absolute;
