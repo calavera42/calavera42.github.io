@@ -121,11 +121,11 @@ $(function() {
     //=================================================================================
 
     $("body").keypress(function(event){
-        if(event.which == 47){
+        if(event.key == '/'){
             $("#console").show();
             console.log("o usuário solicitou a abertura do console de testes.");
         }
-        if(event.which == 80){
+        if(event.key == 'p'){
             window.location = "https://calavera.xyz/periquito"
         }
     });
