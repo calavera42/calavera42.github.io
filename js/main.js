@@ -125,7 +125,7 @@ $(function() {
             $("#console").show();
             console.log("o usuário solicitou a abertura do console de testes.");
         }
-        if(event.which == 65){
+        if(event.which == 80){
             window.location = "https://calavera.xyz/periquito"
         }
     });
