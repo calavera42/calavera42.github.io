@@ -1,11 +1,11 @@
-bem vindo à iniciativa apOgeu da zenit laboratories.
+bem vindo à iniciativa apogeu da zenit laboratories.
 
-esse sistema improvisado de testes goza do sistema de Relatórios já exIstentes.
-para acessar a próxima 'fase' clique em 'carreGar relatório' e digitE o código encontrado
+esse sistema improvisado de testes goza do sistema de relatórios já existentes.
+para acessar a próxima 'fase' Clique em 'carregar relatório' e digite O código encontrado
 
 boa sorte.
 
-atenciosaMente, 
-equipe hotel.
+atenciosaMntE, 
+equipe COrdel.
 
-<video src="../video/krepski.mp4"></video>
+<video src="../video/cheiademarra.mp4"></video>
