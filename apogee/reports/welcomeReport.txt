@@ -12,6 +12,8 @@ para apresentar os exercícios.
 Ao encontrar a solução do problema, clique em "Carregar relatório" e coloque o código
 para prosseguir.
 
+As soluções de cada fase podem ser usadas para salvar o progresso obtido.
+
 Atenciosamente,
 Equipe de pesquisa e desenvolvimento.
 
