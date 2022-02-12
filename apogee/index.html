@@ -7,13 +7,14 @@
                 padding-right: 20px;
                 padding: 0;
                 display: inline;
-                position: fixed;
+                position: absolute;
             }
 
             #menu ul {
                 padding:0px;
                 margin:0px;
                 list-style:none;
+                position: absolute;
             }
 
             
@@ -21,13 +22,16 @@
 
             #menu ul li p
             {
+                margin: 0;
                 padding: 2px 10px;
 	            display: inline-block;
+                position: absolute;
             }
             #menu ul li button
             {
                 padding: 2px 10px;
 	            display: inline-block;
+                position: absolute;
             }
         </style>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
@@ -61,9 +65,9 @@
         </script>
     </head>
     <body>
-        <img src="https://calavera.xyz/imgs/zradl.svg" alt="Zenit Research And Development" id="logo">
         <nav id="menu">
             <ul>
+                <img src="https://calavera.xyz/imgs/zradl.svg" alt="Zenit Research And Development" id="logo">
                 <li><p>Visualizador de relatórios.</p></li>
                 <li><button onclick="LoadReport()">Carregar Relatório</button></li>
             </ul>
