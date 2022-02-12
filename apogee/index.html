@@ -27,7 +27,10 @@
     </body>
 
     <script>
-        $(UpdateClock())
+        $(function(){
+            UpdateClock();
+            $("#reportViewer").innerHTML = FetchReport("reports/welcomeReport.txt");
+        })
 
         function UpdateClock(){
             let date = new Date(); 
