@@ -18,54 +18,56 @@
         </style>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-        <script>
-            $(UpdateClock())
-
-            function UpdateClock(){
-                let date = new Date(); 
-                let hh = date.getHours();
-                let mm = date.getMinutes();
-                let ss = date.getSeconds();
-
-                hh = (hh < 10) ? "0" + hh : hh;
-                mm = (mm < 10) ? "0" + mm : mm;
-                ss = (ss < 10) ? "0" + ss : ss;
-
-                document.getElementById("#clock").innerText = `${hh}:${mm}:${ss}`;
-                setTimeout(UpdateClock(), 1000);
-            }
-
-            function LoadReport()
-            {
-                var promptResult = prompt("Por favor insira o relatório à ser carregado.");
-                var file = `reports/${promptResult}.txt`;
-                if(promptResult == null)
-                {
-                    alert("Operação cancelada.");
-                    return;
-                }
-
-                if(!CanFetchReport(file))
-                {
-                    alert("Relatório inexistente. Operação abortada.");
-                    return;
-                }
-
-                $("#reportViewer").attr("src", file);
-            }
-
-            function CanFetchReport(file){
-                var xhttp = new XMLHttpRequest();
-                xhttp.open('HEAD', file, false);
-                xhttp.send();
-                return xhttp.status == 200;
-            }
-        </script>
     </head>
     <body>
         <img src="https://calavera.xyz/imgs/zradl.svg" alt="Zenit Research And Development" id="logo">
-        <p>Visualizador de relatórios.<br><span id="clock"></span><br><a href="javascript:LoadReport()">Carregar Relatório</a></p>
+        <p>Visualizador de relatórios.<br><span id="clock">.</span><br><a href="javascript:LoadReport()">Carregar Relatório</a></p>
         <hr>
         <embed src="reports/welcomeReport.txt" id="reportViewer">
     </body>
+
+    <script>
+        $(UpdateClock())
+
+        function UpdateClock(){
+            let date = new Date(); 
+            let hh = date.getHours();
+            let mm = date.getMinutes();
+            let ss = date.getSeconds();
+
+            hh = (hh < 10) ? "0" + hh : hh;
+            mm = (mm < 10) ? "0" + mm : mm;
+            ss = (ss < 10) ? "0" + ss : ss;
+
+            let time = hh + ":" + mm + ":" + ss + " "
+            document.getElementById("clock").innerHTML = time;
+            setTimeout(UpdateClock(), 1000);
+        }
+
+        function LoadReport()
+        {
+            var promptResult = prompt("Por favor insira o relatório à ser carregado.");
+            var file = `reports/${promptResult}.txt`;
+            if(promptResult == null)
+            {
+                alert("Operação cancelada.");
+                return;
+            }
+
+            if(!CanFetchReport(file))
+            {
+                alert("Relatório inexistente. Operação abortada.");
+                return;
+            }
+
+            $("#reportViewer").attr("src", file);
+        }
+
+        function CanFetchReport(file){
+            var xhttp = new XMLHttpRequest();
+            xhttp.open('HEAD', file, false);
+            xhttp.send();
+            return xhttp.status == 200;
+        }
+    </script>
 </html>
