@@ -7,3 +7,5 @@ boa sorte.
 
 atenciosaMente, 
 equipe hotel.
+
+<video src="../video/krepski.mp4"></video>
