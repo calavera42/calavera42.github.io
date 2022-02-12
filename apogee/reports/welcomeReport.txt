@@ -17,7 +17,7 @@ Equipe de pesquisa e desenvolvimento.
 
 FIM DA ORIENTAÇÃO *******************************************************************
 
-CTRL+U
+-> Elements <- Console Sources Network Performance Memory Applicationn Security Lighthouse
 
 <!-- As dicas podem estar em diversos lugares, o código fonte, o título da guia, o ícone da página. -->
 <!-- Caso precise de ajuda ou encontr algum erro, entre em contato com a equipe da Zenit: https://calavera.xyz/html/reach-me -->
