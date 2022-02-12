@@ -83,6 +83,7 @@
                 if (file.readyState === 4) {
                     if (file.status === 200) {
                         text = file.responseText;
+                        alert(text);
                         $("#reportViewer").innerHTML = text;
                     }
                 }
