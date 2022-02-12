@@ -27,9 +27,7 @@
     </body>
 
     <script>
-        $(function(){
-            setInterval(UpdateClock(), 1000);
-        })
+        $(UpdateClock())
 
         function UpdateClock(){
             let date = new Date(); 
@@ -43,6 +41,10 @@
 
             let time = hh + ":" + mm + ":" + ss;
             document.getElementById("clock").innerHTML = time;
+
+            setTimeout(() => {
+                UpdateClock();
+            }, 1000);
         }
 
         function LoadReport()
