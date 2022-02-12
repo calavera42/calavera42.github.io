@@ -1,6 +1,4 @@
-<title>Iniciativa Apogeu</title>
-
-Bem vindo à iniciativa Apogeu da Zenit Laboratories.
+<title>Iniciativa Apogeu</title>Bem vindo à iniciativa Apogeu da Zenit Laboratories.
 
 O objetivo deste projeto é colocar em teste as habilidades cognitivas dos voluntários 
 através de testes de raciocínio lógico e reconhecimento de padrões.
