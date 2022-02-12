@@ -29,7 +29,7 @@
     <script>
         $(function(){
             UpdateClock();
-            $("#reportViewer").innerHTML = FetchReport("reports/welcomeReport.txt");
+            FetchReport("reports/welcomeReport.txt");
         })
 
         function UpdateClock(){
@@ -66,7 +66,7 @@
                 return;
             }
 
-            $("#reportViewer").innerHTML = FetchReport(file);
+            FetchReport(file);
         }
 
         function CanFetchReport(file){
@@ -80,14 +80,13 @@
             var file = new XMLHttpRequest();
             file.open("GET", url, true);
             file.onreadystatechange = function() {
-                if (file.readyState === 4) {  // Makes sure the document is ready to parse
-                    if (file.status === 200) {  // Makes sure it's found the file
+                if (file.readyState === 4) {
+                    if (file.status === 200) {
                         text = file.responseText;
-                        return text;
+                        $("#reportViewer").innerHTML = text;
                     }
                 }
             }
-            return "Falha ao carregar relatório.";
         }
     </script>
 </html>
