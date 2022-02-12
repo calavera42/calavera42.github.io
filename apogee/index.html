@@ -19,6 +19,22 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
         <script>
+            $(UpdateClock())
+
+            function UpdateClock(){
+                let date = new Date(); 
+                let hh = date.getHours();
+                let mm = date.getMinutes();
+                let ss = date.getSeconds();
+
+                hh = (hh < 10) ? "0" + hh : hh;
+                mm = (mm < 10) ? "0" + mm : mm;
+                ss = (ss < 10) ? "0" + ss : ss;
+
+                $("#clock").text = `${hh}:${mm}:${ss}`;
+                setTimeout(UpdateClock(), 1000);
+            }
+
             function LoadReport()
             {
                 var promptResult = prompt("Por favor insira o relatório à ser carregado.");
@@ -48,7 +64,7 @@
     </head>
     <body>
         <img src="https://calavera.xyz/imgs/zradl.svg" alt="Zenit Research And Development" id="logo">
-        <p>Visualizador de relatórios.<br>Último login 05/01/2002<br><a href="javascript:LoadReport()">Carregar Relatório</a></p>
+        <p>Visualizador de relatórios.<br><span id="clock"></span><br><a href="javascript:LoadReport()">Carregar Relatório</a></p>
         <hr>
         <embed src="reports/welcomeReport.txt" id="reportViewer">
     </body>
