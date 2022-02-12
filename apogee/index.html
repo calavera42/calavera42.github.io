@@ -76,12 +76,17 @@
             return xhttp.status == 200;
         }
 
-        function FetchReport(file){
-            var xhttp = new XMLHttpRequest();
-            xhttp.open("GET", file, false);
-            xhttp.send();
-            if(xhttp.status == 200)
-                return xhttp.responseText.split('\n').join("<br>");
+        function FetchReport(url){
+            var file = new XMLHttpRequest();
+            file.open("GET", url, true);
+            file.onreadystatechange = function() {
+                if (file.readyState === 4) {  // Makes sure the document is ready to parse
+                    if (file.status === 200) {  // Makes sure it's found the file
+                        text = file.responseText;
+                        return text;
+                    }
+                }
+            }
             return "Falha ao carregar relatório.";
         }
     </script>
