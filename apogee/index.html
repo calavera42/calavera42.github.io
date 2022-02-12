@@ -77,17 +77,18 @@
         }
 
         function FetchReport(url){
-            var file = new XMLHttpRequest();
-            file.open("GET", url, true);
-            file.onreadystatechange = function() {
-                if (file.readyState === 4) {
-                    if (file.status === 200) {
-                        text = file.responseText;
-                        alert(text);
-                        $("#reportViewer").innerHTML = text;
-                    }
+            var txtFile = new XMLHttpRequest();
+            var allText = "Erro desconhecido.";
+            txtFile.onreadystatechange = function () {
+                if (txtFile.readyState === XMLHttpRequest.DONE && txtFile.status == 200) {
+                    allText = txtFile.responseText;
+                    allText = allText.split("\n").join("<br>");
                 }
+
+                document.getElementById('reportViewer').innerHTML = allText;
             }
-        }
+            txtFile.open("GET", url, true);
+            txtFile.send(null);
+            }
     </script>
 </html>
