@@ -1,11 +1,9 @@
 bem vindo à iniciativa apogeu da zenit laboratories.
 
 esse sistema improvisado de testes goza do sistema de relatórios já existentes.
-para acessar a próxima 'fase' Clique em 'carregar relatório' e digite O código encontrado
+para acessar a próxima 'fase' clique em 'carregar relatório' e digite o código encontrado
 
 boa sorte.
 
-atenciosaMntE, 
-equipe COrdel.
-
-<video src="../video/cheiademarra.mp4"></video>
+atenciosamnte, 
+equipe cordel.
