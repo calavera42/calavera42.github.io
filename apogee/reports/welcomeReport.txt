@@ -1,9 +1,25 @@
-bem vindo à iniciativa apogeu da zenit laboratories.
+Bem vindo à iniciativa Apogeu da Zenit Laboratories.
 
-esse sistema improvisado de testes goza do sistema de relatórios já existentes.
-para acessar a próxima 'fase' clique em 'carregar relatório' e digite o código encontrado
+O objetivo deste projeto é colocar em teste as habilidades cognitivas dos voluntários 
+através de testes de raciocínio lógico e reconhecimento de padrões.
 
-boa sorte.
+É altamente recomendado usar todas as fontes de informações fornecidas, pois todas se
+juntarão para ajudar na solução do exercício.
 
-atenciosamnte, 
-equipe cordel.
+O sistema ainda está em fase experimental, logo usaremos este sistema de relatórios
+para apresentar os exercícios.
+
+Ao encontrar a solução do problema, clique em "Carregar relatório" e coloque o código
+para prosseguir.
+
+Atenciosamente,
+Equipe de pesquisa e desenvolvimento.
+
+FIM DA ORIENTAÇÃO *******************************************************************
+
+CTRL+U
+
+<!-- As dicas podem estar em diversos lugares, o código fonte, o título da guia, o ícone da página. -->
+<!-- Caso precise de ajuda ou encontr algum erro, entre em contato com a equipe da Zenit: https://calavera.xyz/html/reach-me -->
+
+<!-- Fase 1: COMECO -->
