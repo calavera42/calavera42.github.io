@@ -26,4 +26,4 @@ FIM DA ORIENTAÇÃO ************************************************************
 -> Elements <- Console Sources Network Performance Memory Application Security Lighthouse
 <!-- As dicas podem estar em diversos lugares, o código fonte, o título da guia, o ícone da página, o nome da imagem, talvez até em relatórios anteriores (?)... -->
 <!-- Caso precise de ajuda ou encontre algum erro, entre em contato com a equipe da Zenit: https://calavera.xyz/html/reach-me -->
-<!-- Fase 1: COMECO -->
+<!-- Fase 1: COMEÇO -->
