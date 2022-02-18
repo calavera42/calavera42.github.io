@@ -9,6 +9,10 @@ juntarão para ajudar na solução do exercício.
 O sistema ainda está em fase experimental, logo usaremos este sistema de relatórios
 para apresentar os exercícios.
 
+As soluções geralmente consistem de uma palavra ou frase curta sem espaços e devida-
+-amente acentuadas. Em casos que a solução obtida não esteja de acordo com a norma,
+faça as devidas correções para assim depois inserir a resposta.
+
 Ao encontrar a solução do problema, clique em "Carregar relatório" e coloque o código
 para prosseguir.
 
