@@ -1,0 +1,7 @@
+
+<figure>
+    <img src="../../imgs/augúrios-.png">
+    <figcaption>Fig. 1 - Abstrato Geométrico Cubista</figcaption><br>
+    <figcaption>Pintura por: Gregório Mione</figcaption><br>
+</figure>
+<title>Sobre mim</title>
