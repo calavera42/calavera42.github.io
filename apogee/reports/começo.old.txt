@@ -1,5 +1,4 @@
 <title>Sobre mim</title><figure class="centerElement">
     <img src="../../imgs/augúrios-.png">
-    <figcaption style="text-align: center; font-style: italic;">Fig. 1 - Abstrato Geométrico Cubista</figcaption>
-    <figcaption style="text-align: center; font-style: italic;">Pintura por: Gregório Mione</figcaption>
+    <figcaption style="text-align: center; font-style: italic;">Fig. 1 - Abstrato Geométrico Cubista</figcaption><figcaption style="text-align: center; font-style: italic;">Pintura por: Gregório Mione</figcaption>
 </figure>
