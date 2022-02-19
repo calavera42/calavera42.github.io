@@ -1,2 +1,1 @@
-<div class="download"><span>Este execício precisa ser resolvido localmente em seu computador.</span>
-<div class="download-img"><img src="../../imgs/download.gif"></div><div class="download-text"><a href="../../imgs/bit-map.bmp">Clique para baixá-lo</a></div></div>	
+.--..-.- .---...- .---.-.- --....-- -.-.--.- .---.--. .--.---- .--...-- .--.---- .---..--
