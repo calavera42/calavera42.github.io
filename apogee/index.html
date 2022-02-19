@@ -78,7 +78,7 @@
                 return;
             }
 
-            FetchReport(file + `?v=${Math.floor(Math.random())}`);
+            FetchReport(file + `?v=${Math.floor(Math.random() * 150)}`);
         }
 
         function CanFetchReport(file){
