@@ -1,0 +1,6 @@
+<title>Short Message System</title>
+<audio controls autoplay>
+  <source src="../audio/krepski.ogg" type="audio/ogg">
+  <!--<source src="horse.mp3" type="audio/mpeg">-->
+  Your browser does not support the audio element.
+</audio>
