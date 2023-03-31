@@ -20,6 +20,7 @@
 }
 
 * {
+    scroll-margin-top: 20px;
     background-color: black;
     color: #e6e6e6;
     -webkit-font-smoothing: antialiased;
@@ -40,7 +41,6 @@ body {
 }
 
 section {
-    scroll-margin-top: 20px;
     position: relative;
     margin: 0;
     margin-bottom: 60px;
