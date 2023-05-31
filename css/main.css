@@ -44,10 +44,7 @@ section {
     position: relative;
     margin: 0;
     margin-bottom: 60px;
-}
-
-#welcome {
-    margin-bottom: 75vh;
+    min-height: 90vh;
 }
 
 h1, h2, h3 {

@@ -1,7 +1,7 @@
 $(function() {
     if (RandomIntFromInterval(0, 100) != 70)
     {
-        //$("footer").hide();
+        $("footer").hide();
     }
 })
 
