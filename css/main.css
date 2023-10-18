@@ -38,6 +38,7 @@ body {
     margin: 0px;
     min-height: 100%;
     width: 100%;
+    /*overflow: hidden;*/
 }
 
 section {
@@ -48,7 +49,7 @@ section {
 }
 
 h1, h2, h3 {
-    font-family: EditorialNew;
+    font-family: Quicksand;
 }
 
 #quote {
@@ -64,18 +65,6 @@ p, a {
     font-family: iAWriter;
 }
 
-#content {
-    position: absolute;
-
-    display: inline-block;
-    margin-bottom: 10vh;
-
-    top: 17%;
-    width: 75%;
-    left: 14.5%;
-    right: 14.5%;
-}
-
 img {
     width: 50vw;
     left: 50%;
@@ -87,7 +76,26 @@ img {
     margin: 10px;
 }
 
+#menu svg {
+    color: white;
+    width: 64px;
+    height: 64px;
+    margin: 10px;
+}
+
 @media (max-width: 500px) {
+    #content {
+        position: absolute;
+    
+        display: inline-block;
+        margin-bottom: 10vh;
+    
+        top: 17%;
+        width: 75%;
+        left: 12.5%;
+        right: 12.5%;
+    }
+
     ul {
         padding: 0;
         padding-left: 5vw;
@@ -97,8 +105,9 @@ img {
         text-align: center;
     }
 
-    #menu h1 {
+    #menu svg {
         margin: 0;
+        margin-bottom: 5px;
     }
 
     #menu ul {
@@ -111,13 +120,26 @@ img {
 }
 
 @media (min-width: 501px) {
-    #menu h1 {
+    #content {
+        position: absolute;
+    
+        display: inline-block;
+        margin-bottom: 10vh;
+    
+        top: 17%;
+        width: 50%;
+        left: 25%;
+        right: 25%;
+    }
+
+    #menu svg {
         float: left;
         margin-top: 8px;
         padding-right: 10px;
     }
 
     #menu ul {
+        margin-top: 30px;
         list-style: none;
         padding-left: 5px;
         float: left;
@@ -129,7 +151,7 @@ img {
 }
 
 #menu ul li a {
-    font-family: EditorialNew;
+    font-family: Poppins;
     text-decoration: none;
 
     padding: 2px;
@@ -157,7 +179,7 @@ img {
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #e6e6e6;
+  background: #000000;
   border-radius: 7px;
   opacity: 0.5;
   transition: opacity 0.3s ease; 
@@ -165,7 +187,7 @@ img {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #e6e6e6;
+  background: #000000;
   opacity: 1;
 }
 
