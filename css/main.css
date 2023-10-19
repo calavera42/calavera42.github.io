@@ -1,168 +1,185 @@
 @font-face {
-    font-family: EditorialNew;
-    font-style: normal;
-    font-weight: 800;
-    src: url(../fonts/EditorialNew-Regular.woff2);
+  font-family: EditorialNew;
+  font-style: normal;
+  font-weight: 800;
+  src: url(../fonts/EditorialNew-Regular.woff2);
 }
 
 @font-face {
-    font-family: EditorialNew;
-    font-style: italic;
-    font-weight: 800;
-    src: url(../fonts/EditorialNew-Italic.woff2);
+  font-family: EditorialNew;
+  font-style: italic;
+  font-weight: 800;
+  src: url(../fonts/EditorialNew-Italic.woff2);
 }
 
 @font-face {
-    font-family: iAWriter;
-    font-style: normal;
-    font-weight: 800;
-    src: url(../fonts/iAWriterDuospace-Regular.woff2);
+  font-family: iAWriter;
+  font-style: normal;
+  font-weight: 800;
+  src: url(../fonts/iAWriterDuospace-Regular.woff2);
 }
 
 * {
-    scroll-margin-top: 20px;
-    background-color: black;
-    color: #e6e6e6;
-    -webkit-font-smoothing: antialiased;
-    -webkit-user-select: none;
-    user-select: none;
+  scroll-margin-top: 20px;
+  color: #000000;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+
+.socialMediaIcons {
+  text-align: center;
+  margin-right: 10px;
+  transition: opacity 0.3s ease;
+  color: #000000;
+  opacity: 0.5;
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.socialMediaIcons:hover {
+  opacity: 1;
+}
+
+#contact {
+  position: absolute; 
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto;
+  text-align: center;
+  bottom: 10px;
+  width: 250px;
+}
+
+#contact ul {
+  text-align: center;
+  padding: 0;
+}
+
+#contact ul li {
+  display: inline;
+  font-size: 36px;
 }
 
 html {
-    margin: 0px;
-    width: 100%;
-    scroll-behavior: smooth;
+  margin: 0px;
+  width: 100%;
+  scroll-behavior: smooth;
 }
  
 body {
-    margin: 0px;
-    min-height: 100%;
-    width: 100%;
-    /*overflow: hidden;*/
+  margin: 0px;
+  min-height: 100%;
+  width: 100%;
+  /*overflow: hidden;*/
 }
 
 section {
-    position: relative;
-    margin: 0;
-    margin-bottom: 60px;
-    min-height: 90vh;
+  position: relative;
+  margin: 0;
+  margin-bottom: 60px;
 }
 
 h1, h2, h3 {
-    font-family: Quicksand;
+  font-family: Quicksand;
 }
 
 #quote {
-    font-family: EditorialNew;
-    
-    opacity: 25%;
-    right: 10px;
-    bottom: 10px;
-    position: absolute;
+  font-family: EditorialNew;
+  
+  opacity: 25%;
+  right: 10px;
+  bottom: 10px;
+  position: absolute;
 }
 
 p, a {
-    font-family: iAWriter;
+  font-family: iAWriter;
 }
 
 img {
-    width: 50vw;
-    left: 50%;
+  width: 50vw;
+  left: 50%;
 }
 
 /* menu */
 
 #menu {
-    margin: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+#menu h2 {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  padding-left: 5vw;
 }
 
 #menu svg {
-    color: white;
-    width: 64px;
-    height: 64px;
-    margin: 10px;
+  width: 110px;
+  height: 110px;
+  margin: 0;
+  margin-bottom: 5px;
+  color: #ff0000;
+}
+
+#menu ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  margin: 0;
+  float: left;
 }
 
 @media (max-width: 500px) {
-    #content {
-        position: absolute;
-    
-        display: inline-block;
-        margin-bottom: 10vh;
-    
-        top: 17%;
-        width: 75%;
-        left: 12.5%;
-        right: 12.5%;
-    }
-
-    ul {
-        padding: 0;
-        padding-left: 5vw;
-    }
-
-    #menu {
-        text-align: center;
-    }
-
-    #menu svg {
-        margin: 0;
-        margin-bottom: 5px;
-    }
-
-    #menu ul {
-        list-style: none;
-        padding: 0;
-        width: 100%;
-        margin: 0;
-        float: left;
-    }
+  #content {
+    position: absolute;
+  
+    display: inline-block;
+    margin-bottom: 10vh;
+  
+    top: 23%;
+    width: 75%;
+    left: 12.5%;
+    right: 12.5%;
+  }
 }
 
 @media (min-width: 501px) {
-    #content {
-        position: absolute;
-    
-        display: inline-block;
-        margin-bottom: 10vh;
-    
-        top: 17%;
-        width: 50%;
-        left: 25%;
-        right: 25%;
-    }
-
-    #menu svg {
-        float: left;
-        margin-top: 8px;
-        padding-right: 10px;
-    }
-
-    #menu ul {
-        margin-top: 30px;
-        list-style: none;
-        padding-left: 5px;
-        float: left;
-    }
+  #content {
+    position: absolute;
+  
+    display: inline-block;
+    margin-bottom: 10vh;
+  
+    top: 23%;
+    width: 50%;
+    left: 25%;
+    right: 25%;
+  }
 }
 
 #menu ul li {
-    display: inline;
+  display: inline;
 }
 
 #menu ul li a {
-    font-family: Poppins;
-    text-decoration: none;
+  
+  text-decoration: none;
 
-    padding: 2px;
+  padding: 2px;
 
-    opacity: 0.5;
+  opacity: 0.5;
 
-    transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 #menu ul li a:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 /* scrollbar */
@@ -193,5 +210,62 @@ img {
 
 /* Listas */
 ul {
-    list-style: lower-greek;
+  list-style: none;
 }
+
+.background {
+  position: fixed;
+  top: 0px;
+  z-index: -100;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.background::after {
+  content:"";
+  background-image:url("https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Dissolve_Noise_Texture.png");
+  height: 300%;
+  width: 300%;
+  position: fixed;
+  opacity:0.05;
+  animation: animateGrain 8s steps(10) infinite;
+}
+.grain-img {
+  z-index: -1;
+}
+
+@keyframes animateGrain{
+  0%, 100% { transform:translate(0, 0) }
+  10%{
+    transform:translate(-5%,-10%)
+  }
+  20%{
+    transform:translate(-15%,-20%)
+  }
+  30%{
+    transform:translate(-5%,-10%)
+  }
+  40%{
+    transform:translate(-15%,-20%)
+  }
+  
+  50%{
+    transform:translate(-5%,-10%)
+  }
+  60%{
+    transform:translate(-15%,-20%)
+  }
+  70%{
+    transform:translate(-5%,-10%)
+  }
+  80%{
+    transform:translate(-15%,-20%)
+  }
+  90%{
+    transform:translate(-5%,-10%)
+  }
+  100%{
+    transform:translate(-15%,-20%)
+  }
+   
+  }
