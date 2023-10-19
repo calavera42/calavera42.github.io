@@ -223,7 +223,7 @@ ul {
 }
 .background::after {
   content:"";
-  background-image:url("https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Dissolve_Noise_Texture.png");
+  background-image:url("../noise.png");
   height: 300%;
   width: 300%;
   position: fixed;
