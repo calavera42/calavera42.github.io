@@ -205,10 +205,6 @@ q {
     quotes: none;
 }
 
-#smthstp {
-    color:var(--back-color);
-}
-
 #screen {
     width: 350px;
 }
