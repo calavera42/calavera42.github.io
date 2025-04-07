@@ -35,6 +35,16 @@
     height: 250px;
 }
 
+.stripe {
+    background: repeating-linear-gradient(
+  45deg,
+  var(--main-color),
+  var(--main-color) 10px,
+  var(--back-color) 10px,
+  var(--back-color) 20px
+);
+}
+
 img {
     filter: blur(0);
 }
