@@ -1,4 +1,4 @@
-.contentRow {
+.slowReveal {
   opacity: 0;
   animation: aparecer 0.25s ease-out forwards, piscar .2s ease-out alternate;
   animation-delay: calc(var(--i) * 0.3s), calc(var(--i) * 0.3s);
