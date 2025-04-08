@@ -4,6 +4,20 @@
   animation-delay: calc(var(--i) * 0.3s), calc(var(--i) * 0.3s);
 }
 
+.marquee-wrapper {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  height: 20px;
+}
+
+.marquee {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+}
+
 @keyframes aparecer {
   from {
     opacity: 0;
