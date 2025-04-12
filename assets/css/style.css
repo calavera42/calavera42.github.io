@@ -64,7 +64,7 @@ body {
 }
 
 .main {
-    width: 704px;
+    width: 640px;
     margin: auto;
 
     padding-bottom: 60px;
@@ -82,11 +82,6 @@ em {
     font-family: MSGothic;
     font-style: normal;
     text-transform: uppercase;
-}
-
-em::selection {
-    background-color: var(--back-color);
-    color: var(--main-color);
 }
 
 em:hover {
@@ -130,28 +125,17 @@ em:hover {
     float: right;
 }
 
-.fRight:has(img) {
+.fLeft:has(img), .fRight:has(img) {
     padding: 30px;
 }
 
-.fRight:has(:not(img))
-{
-    width: 100%;
-}
-
-.fLeft:has(img) {
-    padding: 30px;
-}
-
-.fLeft:has(:not(img))
-{
+.fLeft:has(:not(img)), .fRight:has(:not(img)) {
     width: 100%;
 }
 
 .menu {
     padding: 0;
     margin: 0;
-    /* float: right; */
     width: 100%;
     text-align: center;
 }
@@ -161,7 +145,6 @@ em:hover {
 }
 
 .menu li a {
-    list-style: none;
     text-decoration: none;
     display: block;
 
@@ -173,17 +156,7 @@ em:hover {
     color: var(--back-color);
 }
 
-h3 {
-    padding-left: 3px;
-
-    background-color: var(--main-color);
-    color: var(--back-color);
-
-    font-family: MSGothic;
-    text-transform: uppercase;
-}
-
-h4 {
+h3, h4 {
     padding-left: 3px;
     padding-top: 1px;
     padding-bottom: 1px;
@@ -193,14 +166,11 @@ h4 {
 
     font-family: MSGothic;
     text-transform: uppercase;
+
+    font-size: inherit;
 }
 
-h3::selection {
-    color: var(--main-color);
-    background-color: var(--back-color);
-}
-
-h4::selection {
+em::selection, h4::selection, h3::selection {
     color: var(--main-color);
     background-color: var(--back-color);
 }
@@ -219,10 +189,6 @@ q {
 a:link {
     color: var(--link-color);
     text-decoration: underline;
-}
-
-a:visited {
-    color: var(--link-color);
 }
 
 pre {
