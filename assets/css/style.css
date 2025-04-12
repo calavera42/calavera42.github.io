@@ -1,11 +1,11 @@
 @font-face {
     font-family: MSGothic;
-    src: url('../fonts/MS-Gothic-01.ttf');
+    src: url('https://calavera.xyz/assets/fonts/MS-Gothic-01.ttf');
 }
 
 @font-face {
     font-family: NotoSans;
-    src: url('../fonts/mplus1m1.ttf');
+    src: url('https://calavera.xyz/assets/fonts/mplus1m1.ttf');
 }
 
 @keyframes shake {
@@ -166,8 +166,6 @@ h1, h2, h3, h4, h5, h6 {
 
     font-family: MSGothic;
     text-transform: uppercase;
-
-    font-size: inherit;
 }
 
 em::selection,
