@@ -9,8 +9,12 @@ function iniciarContagem(elemento, duracao, audioInt) {
         if (tempoRestante <= 0) {
             clearInterval(intervalo);
             clearInterval(audioInt);
+
             elemento.innerHTML = "T-00S";
-            window.location = "https://calavera.xyz/"
+            if(history.length == 0)
+                window.location = "https://calavera.xyz/";
+            else
+                history.go(-1);
         }
     }, 1000);
     console.log('a')
