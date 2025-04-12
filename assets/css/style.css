@@ -156,7 +156,7 @@ em:hover {
     color: var(--back-color);
 }
 
-h3, h4 {
+h1, h2, h3, h4, h5, h6 {
     padding-left: 3px;
     padding-top: 1px;
     padding-bottom: 1px;
@@ -170,7 +170,14 @@ h3, h4 {
     font-size: inherit;
 }
 
-em::selection, h4::selection, h3::selection {
+em::selection,
+h1::selection,
+h2::selection, 
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection
+{
     color: var(--main-color);
     background-color: var(--back-color);
 }
@@ -180,10 +187,6 @@ q {
     font-style: italic;
 
     quotes: none;
-}
-
-#screen {
-    width: 350px;
 }
 
 a:link {
