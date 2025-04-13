@@ -1,0 +1,64 @@
+@font-face {
+    font-family: TimesN;
+    src: url('../fonts/TIMES.TTF')
+}
+
+@keyframes bck {
+    from {background-color: black;}
+    to {background-color: #eeeeee;}
+}
+
+@keyframes height {
+    from { color: transparent; }
+    to {color: #eeeeee;}
+}
+
+*::selection {
+    color: #eeeeee;
+    background-color: black;
+}
+
+body {
+    animation: bck 5s ease-in-out;
+    background-color: #eeeeee;
+
+    font-family: TimesN, serif;
+}
+
+em {
+    background-color: black;
+    color: #eeeeee;
+}
+
+.main {
+    width: 640px;
+    height: 200vh;
+
+    margin: auto;
+    text-align: justify;
+
+    position: relative;
+}
+
+p {
+    margin: 0;
+}
+
+div.invert {
+    position: absolute;
+
+    filter: invert(1);
+    mix-blend-mode: difference;
+    z-index: 1000;
+
+    left: 0;
+    right: 0;
+
+    /* position: sticky; */
+
+    background-color: black;
+    width: 100vw;
+
+    color: #eeeeee; 
+    word-break: break-all;
+}

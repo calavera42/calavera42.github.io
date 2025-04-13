@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.fonts.ready.then(() => {
         mainpg.style.visibility = "visible";
         loader.remove();
-
+        
         clearInterval(ticker);
     });
 })
