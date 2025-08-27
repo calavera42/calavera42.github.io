@@ -1,11 +1,16 @@
 @font-face {
-    font-family: MSGothic;
-    src: url('https://calavera.xyz/assets/fonts/MS-Gothic-01.ttf');
+    font-family: Cossette;
+    src: url('../fonts/cossette.ttf');
 }
 
 @font-face {
-    font-family: NotoSans;
-    src: url('https://calavera.xyz/assets/fonts/mplus1m1.ttf');
+    font-family: CossetteTexte;
+    src: url('../fonts/cossette-texte.ttf');
+}
+
+@font-face {
+    font-family: MSGothic;
+    src: url('../fonts/msgothic.ttf');
 }
 
 @keyframes shake {
@@ -79,7 +84,7 @@ em {
     background-color: var(--main-color);
     color: var(--back-color);
 
-    font-family: MSGothic;
+    font-family: Cossette;
     font-style: normal;
     text-transform: uppercase;
 }
@@ -87,22 +92,6 @@ em {
 em:hover {
     animation: shake 0.10s infinite;
     cursor: help;
-}
-
-#email:after {
-    content: "email";
-}
-
-#email:hover:after {
-    content: "webmaster (arroba) calavera.xyz";
-}
-
-#discord:after {
-    content: "discord";
-}
-
-#discord:hover:after {
-    content: "@mi.one";
 }
 
 .centerContent {
@@ -164,7 +153,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--main-color);
     color: var(--back-color);
 
-    font-family: MSGothic;
+    font-family: Cossette;
     text-transform: uppercase;
 }
 
@@ -194,5 +183,6 @@ a:link {
 
 pre {
     white-space: pre-wrap;
-    font-family: NotoSans, serif;
+    font-family: CossetteTexte, serif;
+    font-size: 11pt;
 }

@@ -1,0 +1,15 @@
+#email:after {
+    content: "email";
+}
+
+#email:hover:after {
+    content: "webmaster (arroba) calavera.xyz";
+}
+
+#discord:after {
+    content: "discord";
+}
+
+#discord:hover:after {
+    content: "@mi.one";
+}

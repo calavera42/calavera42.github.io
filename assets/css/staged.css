@@ -4,6 +4,12 @@
   animation-delay: calc(var(--i) * 0.3s), calc(var(--i) * 0.3s);
 }
 
+.getAttention {
+  opacity: 0;
+  animation: aparecer 0.25s ease-out forwards, piscar .2s ease-out alternate, blinkN 1s ease-out forwards;
+  animation-delay: calc(var(--i) * 0.3s), calc(var(--i) * 0.3s), calc(var(--i) * 0.3s + .5s);
+}
+
 .marquee-wrapper {
   width: 100%;
   overflow: hidden;
@@ -16,6 +22,29 @@
   position: absolute;
   white-space: nowrap;
   will-change: transform;
+}
+
+@keyframes blinkN {
+  0% {
+    background-color: var(--back-color);
+    color: var(--main-color);
+  }
+  25% {
+    background-color: var(--main-color);
+    color: var(--back-color);
+  }
+  50% {
+    background-color: var(--back-color);
+    color: var(--main-color);
+  }
+  75% {
+    background-color: var(--main-color);
+    color: var(--back-color);
+  }
+  100% {
+    background-color: var(--back-color);
+    color: var(--main-color);
+  }
 }
 
 @keyframes aparecer {
