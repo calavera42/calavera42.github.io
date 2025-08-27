@@ -157,6 +157,13 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
+.imgTitle {
+    color: var(--main-color); 
+    background-color: var(--back-color); 
+    font-family: Cossette; 
+    width: auto;
+}
+
 em::selection,
 h1::selection,
 h2::selection, 
