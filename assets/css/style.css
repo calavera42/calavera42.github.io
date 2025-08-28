@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: MSGothic;
-    src: url('../fonts/msgothic.ttf');
+    src: url('https://calavera.xyz/assets/fonts/msgothic.ttf');
 }
 
 @keyframes shake {
