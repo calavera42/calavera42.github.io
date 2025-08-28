@@ -1,11 +1,11 @@
 @font-face {
     font-family: Cossette;
-    src: url('../fonts/cossette.ttf');
+    src: url('https://calavera.xyz/assets/fonts/cossette.ttf');
 }
 
 @font-face {
     font-family: CossetteTexte;
-    src: url('../fonts/cossette-texte.ttf');
+    src: url('https://calavera.xyz/assets/fonts/cossette-texte.ttf');
 }
 
 @font-face {
