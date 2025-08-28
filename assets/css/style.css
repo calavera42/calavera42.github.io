@@ -29,7 +29,7 @@
     --link-color: #5eff00; /*#ffbb00*/
 }
 
-*::selection {
+*::selection,.imgTitle::selection {
     background-color: var(--main-color);
     color: var(--back-color);
 }
