@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let counter = 0;
 
     const ticker = setInterval(() => {
-        phrase.textContent = anim[(counter++) % anim.length];
+        phrase.textContent = `Baixando recursos ${anim[(counter++) % anim.length]}`;
     }, 100);
 
     document.fonts.ready.then(() => {
