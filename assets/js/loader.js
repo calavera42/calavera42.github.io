@@ -1,5 +1,10 @@
 const anim = "/-\\|"
+
 let stage = 0;
+
+let loader;
+let mainpg;
+let ticker;
 
 function done() 
 {
@@ -15,13 +20,14 @@ function done()
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    const loader = document.getElementById("loader");
-    const mainpg = document.getElementById("main")
     const phrase = document.getElementById("phrase");
+    const img = document.querySelector('img')
+    loader = document.getElementById("loader");
+    mainpg = document.getElementById("main")
 
     let counter = 0;
 
-    const ticker = setInterval(() => {
+    ticker = setInterval(() => {
         phrase.textContent = `Baixando recursos ${anim[(counter++) % anim.length]}`;
     }, 100);
 
