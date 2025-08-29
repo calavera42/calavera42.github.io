@@ -51,16 +51,14 @@
 
 .stripe {
     background: repeating-linear-gradient(
-  45deg,
-  var(--main-color),
-  var(--main-color) 10px,
-  var(--back-color) 10px,
-  var(--back-color) 20px
-);
+        45deg,
+        var(--main-color), var(--main-color) 10px,
+        var(--back-color) 10px, var(--back-color) 20px
+    );
 }
 
 img {
-    filter: blur(0);
+    filter: blur(0px);
 }
 
 body {
@@ -69,7 +67,8 @@ body {
 
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12pt;
-    filter: blur(.03em);
+
+    filter: blur(.6px);
 }
 
 .main {
