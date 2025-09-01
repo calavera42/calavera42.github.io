@@ -1,0 +1,77 @@
+.reportContent {
+    overflow-x: hidden;
+    padding-right: 4px;
+    padding: 2px;
+    overflow-y: auto;
+    height: 100%;
+}
+
+*::selection {
+    color: var(--main-color);
+    background-color: var(--back-color);
+}
+
+.iwannabehidden {
+    color: var(--back-color);
+}
+
+.iwannabehidden::selection {
+    color: var(--main-color);
+    background-color: var(--back-color);
+}
+
+.mainBody {
+    width: 640px;
+    height: 400px;
+    margin: auto;
+}
+
+.wordsContainer {
+    text-align: center;
+    float: left;
+    display: flex;
+
+    width: 100%;
+}
+
+.shake {
+    animation: shake 0.10s infinite;
+}
+
+a.inline {
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: CossetteTexte;
+    font-weight: 700;
+}
+
+input.inline {
+    background-color: var(--main-color);
+    color: var(--back-color);
+    border: none;
+
+    font-family: CossetteTexte;
+    font-size: 13pt;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 100px;
+}
+
+input.inline::selection {
+    color: var(--main-color);
+    background-color: var(--back-color);
+}
+
+.inline:focus
+{
+    outline: none;
+}

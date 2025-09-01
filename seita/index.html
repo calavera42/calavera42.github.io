@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calavera</title>
+
+    <link rel="preload" href="../assets/fonts/cossette.ttf" as="font" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/staged.css">
+    <link rel="stylesheet" href="../assets/css/seita.css">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // example listener for final event
+            document.addEventListener("workDone", () => {
+                setTimeout(() => {
+                    window.location = '../devaneios/times/index.html'
+                }, 5000);
+            });
+        })
+    </script>
+
+    <script src="../assets/js/hmpg.js"></script>
+    <script src="../assets/js/loader.js"></script>
+</head>
+<body>
+    <div id="loader" class="main">
+        <span style="text-align: left; font-family: monospace;" id="phrase"></span>
+    </div>
+    <div id="main" class="main" style="visibility: hidden;">
+        <pre>Mostre-se capaz de observar aquilo que fez tanta questão de ser visto.</pre>
+        <div class="reportContent">
+            <div class="wordsContainer">
+                <input class="inline word-input" type="text">
+                <a class="inline">&mdash;</a>
+                <input class="inline word-input" type="text">
+                <a class="inline">&mdash;</a>
+                <input class="inline word-input" type="text">
+                <a class="inline">&mdash;</a>
+                <input class="inline word-input" type="text">
+            </div>
+        </div>
+        <pre class="iwannabehidden">God speed, my love<br>Till you are mine again</pre>
+    </div>
+</body>
+</html>

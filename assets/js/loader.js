@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
         phrase.textContent = `Baixando recursos ${anim[(counter++) % anim.length]}`;
     }, 100);
 
-    if (img.complete) {
+    if (img == undefined || img.complete) {
         done()
     } else {
         img.addEventListener('load', done)
@@ -39,5 +39,32 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.fonts.ready.then(() => {
         done()
+    });
+
+    const ref = atob("Y2VpZmFkb3IsYWJpc21vLG1vcnRlLHBlY2Fkbw==").split(",");
+    const audio = new Audio("../assets/audio/rmbl.mp3");
+    audio.loop = true;
+
+    const inputs = document.querySelectorAll(".word-input");
+
+    inputs.forEach((el, idx) => {
+        el.addEventListener("input", () => {
+            const v = el.value.trim().toLowerCase();
+            if (ref.indexOf(v) !== -1) {
+                el.classList.add("shake");
+
+                audio.play();
+
+                if (idx < inputs.length - 1) {
+                    inputs[idx + 1].focus();
+                }
+
+                const all = Array.from(inputs).map(x => x.value.trim().toLowerCase());
+                const unique = [...new Set(all.filter(x => ref.indexOf(x) !== -1))];
+                if (unique.length === ref.length) {
+                    document.dispatchEvent(new Event("workDone"));
+                }
+            }
+        });
     });
 })
