@@ -158,6 +158,8 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 1px;
     padding-bottom: 1px;
 
+    max-height: 22px;
+
     background-color: var(--main-color);
     color: var(--back-color);
 
