@@ -40,7 +40,7 @@
 
 .blank {
     --dot-size: 1px;
-    --spacing: 20px;
+    --spacing: 19px;
 
     background-image: 
         radial-gradient(var(--main-color) var(--dot-size), transparent var(--dot-size));
@@ -115,6 +115,7 @@ em:hover {
 
 .fNone {
     float: none;
+    width: 100%;
 }
 
 .fRight {
@@ -158,7 +159,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 1px;
     padding-bottom: 1px;
 
-    max-height: 22px;
+    /* max-height: 22px; */
 
     background-color: var(--main-color);
     color: var(--back-color);
